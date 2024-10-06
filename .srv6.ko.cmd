@@ -1,0 +1,1 @@
+cmd_/home/zhf/Projects/srv6_kernel/srv6.ko := ld -r -m elf_x86_64 --build-id=sha1  -T scripts/module.lds -o /home/zhf/Projects/srv6_kernel/srv6.ko /home/zhf/Projects/srv6_kernel/srv6.o /home/zhf/Projects/srv6_kernel/srv6.mod.o;  true

@@ -1,0 +1,30 @@
+//
+// Created by zhf on 24-10-6.
+//
+#include "tools/tools.h"
+#include "hooks/hook_ipv6_rcv.h"
+
+asmlinkage int (*orig_ipv6_rcv)(struct sk_buff *skb,struct net_device *dev,struct packet_type *pt,struct net_device *orig_dev);
+
+asmlinkage int hook_ipv6_rcv(struct sk_buff *skb,
+                             struct net_device *dev,
+                             struct packet_type *pt,
+                             struct net_device *orig_dev) {
+    LOG_WITH_PREFIX("recv ipv6 packet");
+    return orig_ipv6_rcv(skb, dev, pt, orig_dev);
+}
+
+
+int self_defined_ipv6_rcv(struct sk_buff *skb,
+                          struct net_device *dev,
+                          struct packet_type *pt,
+                          struct net_device *orig_dev){
+    return 0;
+}
+
+void add_ipv6_rcv_to_hook(void){
+    hooks[number_of_hook].name = "ipv6_rcv";
+    hooks[number_of_hook].function = hook_ipv6_rcv;
+    hooks[number_of_hook].original = &orig_ipv6_rcv;
+    number_of_hook += 1;
+}
