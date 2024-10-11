@@ -1,8 +1,8 @@
-cmd_/home/zhf/Projects/srv6_kernel/src/prepare/resolve_function_address.o := gcc -Wp,-MMD,/home/zhf/Projects/srv6_kernel/src/prepare/.resolve_function_address.o.d -nostdinc -I./arch/x86/include -I./arch/x86/include/generated  -I./include -I./arch/x86/include/uapi -I./arch/x86/include/generated/uapi -I./include/uapi -I./include/generated/uapi -include ./include/linux/compiler-version.h -include ./include/linux/kconfig.h -include ./include/linux/compiler_types.h -D__KERNEL__ -fmacro-prefix-map=./= -Wall -Wundef -Werror=strict-prototypes -Wno-trigraphs -fno-strict-aliasing -fno-common -fshort-wchar -fno-PIE -Werror=implicit-function-declaration -Werror=implicit-int -Werror=return-type -Wno-format-security -std=gnu11 -mno-sse -mno-mmx -mno-sse2 -mno-3dnow -mno-avx -fcf-protection=none -m64 -falign-jumps=1 -falign-loops=1 -mno-80387 -mno-fp-ret-in-387 -mpreferred-stack-boundary=3 -mskip-rax-setup -mtune=generic -mno-red-zone -mcmodel=kernel -Wno-sign-compare -fno-asynchronous-unwind-tables -mindirect-branch=thunk-extern -mindirect-branch-register -mindirect-branch-cs-prefix -mfunction-return=thunk-extern -fno-jump-tables -mharden-sls=all -fno-delete-null-pointer-checks -Wno-frame-address -Wno-format-truncation -Wno-format-overflow -Wno-address-of-packed-member -O2 -fno-allow-store-data-races -Wframe-larger-than=1024 -fstack-protector-strong -Wimplicit-fallthrough=5 -Wno-main -Wno-unused-but-set-variable -Wno-unused-const-variable -fno-omit-frame-pointer -fno-optimize-sibling-calls -fno-stack-clash-protection -fzero-call-used-regs=used-gpr -pg -mrecord-mcount -mfentry -DCC_USING_FENTRY -Wdeclaration-after-statement -Wvla -Wno-pointer-sign -Wcast-function-type -Wno-stringop-truncation -Wno-stringop-overflow -Wno-restrict -Wno-maybe-uninitialized -Wno-alloc-size-larger-than -fno-strict-overflow -fno-stack-check -fconserve-stack -Werror=date-time -Werror=incompatible-pointer-types -Werror=designated-init -Wno-packed-not-aligned -g -gdwarf-5 -I/home/zhf/Projects/srv6_kernel/headers  -fsanitize=bounds -fsanitize=shift -fsanitize=bool -fsanitize=enum  -DMODULE  -DKBUILD_BASENAME='"resolve_function_address"' -DKBUILD_MODNAME='"srv6"' -D__KBUILD_MODNAME=kmod_srv6 -c -o /home/zhf/Projects/srv6_kernel/src/prepare/resolve_function_address.o /home/zhf/Projects/srv6_kernel/src/prepare/resolve_function_address.c   ; ./tools/objtool/objtool  --hacks=jump_label  --hacks=noinstr     --retpoline  --rethunk  --sls  --stackval  --static-call  --uaccess   --module  /home/zhf/Projects/srv6_kernel/src/prepare/resolve_function_address.o
+cmd_/home/zhf/Projects/srv6_test/srv6_kernel/src/prepare/resolve_function_address.o := gcc -Wp,-MMD,/home/zhf/Projects/srv6_test/srv6_kernel/src/prepare/.resolve_function_address.o.d -nostdinc -I./arch/x86/include -I./arch/x86/include/generated  -I./include -I./arch/x86/include/uapi -I./arch/x86/include/generated/uapi -I./include/uapi -I./include/generated/uapi -include ./include/linux/compiler-version.h -include ./include/linux/kconfig.h -include ./include/linux/compiler_types.h -D__KERNEL__ -fmacro-prefix-map=./= -Wall -Wundef -Werror=strict-prototypes -Wno-trigraphs -fno-strict-aliasing -fno-common -fshort-wchar -fno-PIE -Werror=implicit-function-declaration -Werror=implicit-int -Werror=return-type -Wno-format-security -std=gnu11 -mno-sse -mno-mmx -mno-sse2 -mno-3dnow -mno-avx -fcf-protection=none -m64 -falign-jumps=1 -falign-loops=1 -mno-80387 -mno-fp-ret-in-387 -mpreferred-stack-boundary=3 -mskip-rax-setup -mtune=generic -mno-red-zone -mcmodel=kernel -Wno-sign-compare -fno-asynchronous-unwind-tables -mindirect-branch=thunk-extern -mindirect-branch-register -mindirect-branch-cs-prefix -mfunction-return=thunk-extern -fno-jump-tables -mharden-sls=all -fno-delete-null-pointer-checks -Wno-frame-address -Wno-format-truncation -Wno-format-overflow -Wno-address-of-packed-member -O2 -fno-allow-store-data-races -Wframe-larger-than=1024 -fstack-protector-strong -Wimplicit-fallthrough=5 -Wno-main -Wno-unused-but-set-variable -Wno-unused-const-variable -fno-omit-frame-pointer -fno-optimize-sibling-calls -fno-stack-clash-protection -fzero-call-used-regs=used-gpr -pg -mrecord-mcount -mfentry -DCC_USING_FENTRY -Wdeclaration-after-statement -Wvla -Wno-pointer-sign -Wcast-function-type -Wno-stringop-truncation -Wno-stringop-overflow -Wno-restrict -Wno-maybe-uninitialized -Wno-alloc-size-larger-than -fno-strict-overflow -fno-stack-check -fconserve-stack -Werror=date-time -Werror=incompatible-pointer-types -Werror=designated-init -Wno-packed-not-aligned -g -gdwarf-5 -I/home/zhf/Projects/srv6_test/srv6_kernel/headers  -fsanitize=bounds -fsanitize=shift -fsanitize=bool -fsanitize=enum  -DMODULE  -DKBUILD_BASENAME='"resolve_function_address"' -DKBUILD_MODNAME='"srv6"' -D__KBUILD_MODNAME=kmod_srv6 -c -o /home/zhf/Projects/srv6_test/srv6_kernel/src/prepare/resolve_function_address.o /home/zhf/Projects/srv6_test/srv6_kernel/src/prepare/resolve_function_address.c   ; ./tools/objtool/objtool  --hacks=jump_label  --hacks=noinstr     --retpoline  --rethunk  --sls  --stackval  --static-call  --uaccess   --module  /home/zhf/Projects/srv6_test/srv6_kernel/src/prepare/resolve_function_address.o
 
-source_/home/zhf/Projects/srv6_kernel/src/prepare/resolve_function_address.o := /home/zhf/Projects/srv6_kernel/src/prepare/resolve_function_address.c
+source_/home/zhf/Projects/srv6_test/srv6_kernel/src/prepare/resolve_function_address.o := /home/zhf/Projects/srv6_test/srv6_kernel/src/prepare/resolve_function_address.c
 
-deps_/home/zhf/Projects/srv6_kernel/src/prepare/resolve_function_address.o := \
+deps_/home/zhf/Projects/srv6_test/srv6_kernel/src/prepare/resolve_function_address.o := \
   include/linux/compiler-version.h \
     $(wildcard include/config/CC_VERSION_TEXT) \
   include/linux/kconfig.h \
@@ -20,26 +20,26 @@ deps_/home/zhf/Projects/srv6_kernel/src/prepare/resolve_function_address.o := \
     $(wildcard include/config/ARCH_USE_BUILTIN_BSWAP) \
     $(wildcard include/config/SHADOW_CALL_STACK) \
     $(wildcard include/config/KCOV) \
-  /home/zhf/Projects/srv6_kernel/headers/prepare/resolve_function_address.h \
-  /home/zhf/Projects/srv6_kernel/headers/hooks/hook_tcp_v4_rcv.h \
-  /home/zhf/Projects/srv6_kernel/headers/api/ftrace_hook_api.h \
-    $(wildcard include/config/X86_64) \
-  include/linux/init.h \
-    $(wildcard include/config/HAVE_ARCH_PREL32_RELOCATIONS) \
-    $(wildcard include/config/STRICT_KERNEL_RWX) \
-    $(wildcard include/config/STRICT_MODULE_RWX) \
-    $(wildcard include/config/LTO_CLANG) \
-  include/linux/compiler.h \
-    $(wildcard include/config/TRACE_BRANCH_PROFILING) \
-    $(wildcard include/config/PROFILE_ALL_BRANCHES) \
-    $(wildcard include/config/OBJTOOL) \
-    $(wildcard include/config/CFI_CLANG) \
-  include/linux/compiler_types.h \
-  arch/x86/include/generated/asm/rwonce.h \
-  include/asm-generic/rwonce.h \
-  include/linux/kasan-checks.h \
-    $(wildcard include/config/KASAN_GENERIC) \
-    $(wildcard include/config/KASAN_SW_TAGS) \
+  /home/zhf/Projects/srv6_test/srv6_kernel/headers/prepare/resolve_function_address.h \
+  include/linux/kernel.h \
+    $(wildcard include/config/PREEMPT_VOLUNTARY_BUILD) \
+    $(wildcard include/config/PREEMPT_DYNAMIC) \
+    $(wildcard include/config/HAVE_PREEMPT_DYNAMIC_CALL) \
+    $(wildcard include/config/HAVE_PREEMPT_DYNAMIC_KEY) \
+    $(wildcard include/config/PREEMPT_) \
+    $(wildcard include/config/DEBUG_ATOMIC_SLEEP) \
+    $(wildcard include/config/SMP) \
+    $(wildcard include/config/MMU) \
+    $(wildcard include/config/PROVE_LOCKING) \
+    $(wildcard include/config/TRACING) \
+    $(wildcard include/config/FTRACE_MCOUNT_RECORD) \
+  include/linux/stdarg.h \
+  include/linux/align.h \
+  include/linux/const.h \
+  include/vdso/const.h \
+  include/uapi/linux/const.h \
+  include/linux/limits.h \
+  include/uapi/linux/limits.h \
   include/linux/types.h \
     $(wildcard include/config/HAVE_UID16) \
     $(wildcard include/config/UID16) \
@@ -58,66 +58,36 @@ deps_/home/zhf/Projects/srv6_kernel/src/prepare/resolve_function_address.o := \
   include/uapi/linux/posix_types.h \
   include/linux/stddef.h \
   include/uapi/linux/stddef.h \
+  include/linux/compiler_types.h \
   arch/x86/include/asm/posix_types.h \
     $(wildcard include/config/X86_32) \
   arch/x86/include/uapi/asm/posix_types_64.h \
   include/uapi/asm-generic/posix_types.h \
-  include/linux/kcsan-checks.h \
-    $(wildcard include/config/KCSAN) \
-    $(wildcard include/config/KCSAN_WEAK_MEMORY) \
-    $(wildcard include/config/KCSAN_IGNORE_ATOMICS) \
-  include/linux/dirent.h \
-  include/linux/ftrace.h \
-    $(wildcard include/config/TRACING) \
-    $(wildcard include/config/FUNCTION_TRACER) \
-    $(wildcard include/config/MODULES) \
-    $(wildcard include/config/DYNAMIC_FTRACE) \
-    $(wildcard include/config/HAVE_DYNAMIC_FTRACE_WITH_ARGS) \
-    $(wildcard include/config/DYNAMIC_FTRACE_WITH_REGS) \
-    $(wildcard include/config/DYNAMIC_FTRACE_WITH_DIRECT_CALLS) \
-    $(wildcard include/config/HAVE_DYNAMIC_FTRACE_WITH_DIRECT_CALLS) \
-    $(wildcard include/config/STACK_TRACER) \
-    $(wildcard include/config/DEBUG_PREEMPT) \
-    $(wildcard include/config/FUNCTION_GRAPH_TRACER) \
-    $(wildcard include/config/FRAME_POINTER) \
-    $(wildcard include/config/TRACE_PREEMPT_TOGGLE) \
-    $(wildcard include/config/FTRACE_MCOUNT_RECORD) \
-    $(wildcard include/config/FUNCTION_PROFILER) \
-    $(wildcard include/config/FTRACE_SYSCALLS) \
-  include/linux/trace_recursion.h \
-    $(wildcard include/config/FTRACE_RECORD_RECURSION) \
-  include/linux/interrupt.h \
-    $(wildcard include/config/SMP) \
-    $(wildcard include/config/LOCKDEP) \
-    $(wildcard include/config/IRQ_FORCED_THREADING) \
-    $(wildcard include/config/PREEMPT_RT) \
-    $(wildcard include/config/GENERIC_IRQ_PROBE) \
-    $(wildcard include/config/PROC_FS) \
-    $(wildcard include/config/IRQ_TIMINGS) \
-  include/linux/kernel.h \
-    $(wildcard include/config/PREEMPT_VOLUNTARY_BUILD) \
-    $(wildcard include/config/PREEMPT_DYNAMIC) \
-    $(wildcard include/config/HAVE_PREEMPT_DYNAMIC_CALL) \
-    $(wildcard include/config/HAVE_PREEMPT_DYNAMIC_KEY) \
-    $(wildcard include/config/PREEMPT_) \
-    $(wildcard include/config/DEBUG_ATOMIC_SLEEP) \
-    $(wildcard include/config/MMU) \
-    $(wildcard include/config/PROVE_LOCKING) \
-  include/linux/stdarg.h \
-  include/linux/align.h \
-  include/linux/const.h \
-  include/vdso/const.h \
-  include/uapi/linux/const.h \
-  include/linux/limits.h \
-  include/uapi/linux/limits.h \
   include/vdso/limits.h \
   include/linux/linkage.h \
     $(wildcard include/config/ARCH_USE_SYM_ANNOTATIONS) \
   include/linux/stringify.h \
   include/linux/export.h \
     $(wildcard include/config/MODVERSIONS) \
+    $(wildcard include/config/HAVE_ARCH_PREL32_RELOCATIONS) \
+    $(wildcard include/config/MODULES) \
     $(wildcard include/config/TRIM_UNUSED_KSYMS) \
+  include/linux/compiler.h \
+    $(wildcard include/config/TRACE_BRANCH_PROFILING) \
+    $(wildcard include/config/PROFILE_ALL_BRANCHES) \
+    $(wildcard include/config/OBJTOOL) \
+    $(wildcard include/config/CFI_CLANG) \
+  arch/x86/include/generated/asm/rwonce.h \
+  include/asm-generic/rwonce.h \
+  include/linux/kasan-checks.h \
+    $(wildcard include/config/KASAN_GENERIC) \
+    $(wildcard include/config/KASAN_SW_TAGS) \
+  include/linux/kcsan-checks.h \
+    $(wildcard include/config/KCSAN) \
+    $(wildcard include/config/KCSAN_WEAK_MEMORY) \
+    $(wildcard include/config/KCSAN_IGNORE_ATOMICS) \
   arch/x86/include/asm/linkage.h \
+    $(wildcard include/config/X86_64) \
     $(wildcard include/config/X86_ALIGNMENT_16) \
     $(wildcard include/config/RETHUNK) \
     $(wildcard include/config/SLS) \
@@ -200,6 +170,10 @@ deps_/home/zhf/Projects/srv6_kernel/src/prepare/resolve_function_address.o := \
     $(wildcard include/config/PRINTK_INDEX) \
     $(wildcard include/config/DYNAMIC_DEBUG) \
     $(wildcard include/config/DYNAMIC_DEBUG_CORE) \
+  include/linux/init.h \
+    $(wildcard include/config/STRICT_KERNEL_RWX) \
+    $(wildcard include/config/STRICT_MODULE_RWX) \
+    $(wildcard include/config/LTO_CLANG) \
   include/linux/kern_levels.h \
   include/linux/ratelimit_types.h \
   include/uapi/linux/param.h \
@@ -216,6 +190,7 @@ deps_/home/zhf/Projects/srv6_kernel/src/prepare/resolve_function_address.o := \
   include/asm-generic/qrwlock_types.h \
   include/linux/lockdep_types.h \
     $(wildcard include/config/PROVE_RAW_LOCK_NESTING) \
+    $(wildcard include/config/LOCKDEP) \
     $(wildcard include/config/LOCK_STAT) \
   include/linux/once_lite.h \
   include/linux/dynamic_debug.h \
@@ -228,6 +203,31 @@ deps_/home/zhf/Projects/srv6_kernel/src/prepare/resolve_function_address.o := \
     $(wildcard include/config/HAVE_STATIC_CALL) \
     $(wildcard include/config/HAVE_STATIC_CALL_INLINE) \
   include/linux/instruction_pointer.h \
+  /home/zhf/Projects/srv6_test/srv6_kernel/headers/hooks/ipv6_rcv/ipv6_rcv.h \
+  /home/zhf/Projects/srv6_test/srv6_kernel/headers/api/ftrace_hook_api.h \
+  include/linux/dirent.h \
+  include/linux/ftrace.h \
+    $(wildcard include/config/FUNCTION_TRACER) \
+    $(wildcard include/config/DYNAMIC_FTRACE) \
+    $(wildcard include/config/HAVE_DYNAMIC_FTRACE_WITH_ARGS) \
+    $(wildcard include/config/DYNAMIC_FTRACE_WITH_REGS) \
+    $(wildcard include/config/DYNAMIC_FTRACE_WITH_DIRECT_CALLS) \
+    $(wildcard include/config/HAVE_DYNAMIC_FTRACE_WITH_DIRECT_CALLS) \
+    $(wildcard include/config/STACK_TRACER) \
+    $(wildcard include/config/DEBUG_PREEMPT) \
+    $(wildcard include/config/FUNCTION_GRAPH_TRACER) \
+    $(wildcard include/config/FRAME_POINTER) \
+    $(wildcard include/config/TRACE_PREEMPT_TOGGLE) \
+    $(wildcard include/config/FUNCTION_PROFILER) \
+    $(wildcard include/config/FTRACE_SYSCALLS) \
+  include/linux/trace_recursion.h \
+    $(wildcard include/config/FTRACE_RECORD_RECURSION) \
+  include/linux/interrupt.h \
+    $(wildcard include/config/IRQ_FORCED_THREADING) \
+    $(wildcard include/config/PREEMPT_RT) \
+    $(wildcard include/config/GENERIC_IRQ_PROBE) \
+    $(wildcard include/config/PROC_FS) \
+    $(wildcard include/config/IRQ_TIMINGS) \
   include/linux/cpumask.h \
     $(wildcard include/config/CPUMASK_OFFSTACK) \
     $(wildcard include/config/HOTPLUG_CPU) \
@@ -1497,7 +1497,7 @@ deps_/home/zhf/Projects/srv6_kernel/src/prepare/resolve_function_address.o := \
   include/net/timewait_sock.h \
   include/uapi/linux/tcp.h \
   include/generated/uapi/linux/version.h \
-  /home/zhf/Projects/srv6_kernel/headers/impl/self_defined_tcp_rcv_established.h \
+  /home/zhf/Projects/srv6_test/srv6_kernel/headers/hooks/ip6_rcv_finish_core/ip6_rcv_finish_core.h \
   include/net/ip.h \
   include/linux/ip.h \
   include/uapi/linux/ip.h \
@@ -1529,59 +1529,9 @@ deps_/home/zhf/Projects/srv6_kernel/src/prepare/resolve_function_address.o := \
   include/net/lwtunnel.h \
     $(wildcard include/config/LWTUNNEL) \
   include/uapi/linux/lwtunnel.h \
-  include/net/tcp.h \
-    $(wildcard include/config/SYN_COOKIES) \
-  include/net/inet_hashtables.h \
-  include/net/sock_reuseport.h \
-  include/linux/filter.h \
-    $(wildcard include/config/BPF_JIT_ALWAYS_ON) \
-    $(wildcard include/config/HAVE_EBPF_JIT) \
-  include/linux/bpf.h \
-  include/uapi/linux/bpf.h \
-    $(wildcard include/config/BPF_LIRC_MODE2) \
-    $(wildcard include/config/EFFICIENT_UNALIGNED_ACCESS) \
-    $(wildcard include/config/BPF_KPROBE_OVERRIDE) \
-  include/uapi/linux/bpf_common.h \
-  include/linux/sched/mm.h \
-    $(wildcard include/config/ARCH_HAS_MEMBARRIER_CALLBACKS) \
-  include/linux/sync_core.h \
-    $(wildcard include/config/ARCH_HAS_SYNC_CORE_BEFORE_USERMODE) \
-  arch/x86/include/asm/sync_core.h \
-  include/linux/ioasid.h \
-    $(wildcard include/config/IOASID) \
-  include/linux/bpfptr.h \
-  include/linux/btf.h \
-  include/uapi/linux/btf.h \
-  include/linux/bpf_types.h \
-    $(wildcard include/config/BPF_LSM) \
-  include/linux/set_memory.h \
-    $(wildcard include/config/ARCH_HAS_SET_MEMORY) \
-    $(wildcard include/config/ARCH_HAS_SET_DIRECT_MAP) \
-  arch/x86/include/asm/set_memory.h \
-  include/asm-generic/set_memory.h \
-  include/linux/if_vlan.h \
-  include/linux/etherdevice.h \
-  include/linux/crc32.h \
-  include/linux/bitrev.h \
-    $(wildcard include/config/HAVE_ARCH_BITREVERSE) \
-  arch/x86/include/generated/asm/unaligned.h \
-  include/asm-generic/unaligned.h \
-  include/uapi/linux/if_vlan.h \
-  include/crypto/sha1.h \
-  include/net/sch_generic.h \
-  include/uapi/linux/pkt_cls.h \
-  include/net/gen_stats.h \
-  include/uapi/linux/gen_stats.h \
-  include/net/flow_offload.h \
-  include/uapi/linux/filter.h \
-  include/net/inet_ecn.h \
-  include/net/dsfield.h \
-  include/net/mptcp.h \
-    $(wildcard include/config/MPTCP_IPV6) \
-  include/linux/bpf-cgroup.h \
 
-/home/zhf/Projects/srv6_kernel/src/prepare/resolve_function_address.o: $(deps_/home/zhf/Projects/srv6_kernel/src/prepare/resolve_function_address.o)
+/home/zhf/Projects/srv6_test/srv6_kernel/src/prepare/resolve_function_address.o: $(deps_/home/zhf/Projects/srv6_test/srv6_kernel/src/prepare/resolve_function_address.o)
 
-$(deps_/home/zhf/Projects/srv6_kernel/src/prepare/resolve_function_address.o):
+$(deps_/home/zhf/Projects/srv6_test/srv6_kernel/src/prepare/resolve_function_address.o):
 
-/home/zhf/Projects/srv6_kernel/src/prepare/resolve_function_address.o: $(wildcard ./tools/objtool/objtool)
+/home/zhf/Projects/srv6_test/srv6_kernel/src/prepare/resolve_function_address.o: $(wildcard ./tools/objtool/objtool)

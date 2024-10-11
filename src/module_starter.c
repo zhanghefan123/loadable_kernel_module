@@ -5,6 +5,7 @@
 #include <linux/module.h>
 #include <net/net_namespace.h>
 #include "api/hook_functions_api.h"
+#include "prepare/resolve_function_address.h"
 #include "tools/tools.h"
 
 /**
@@ -39,10 +40,15 @@ static struct pernet_operations net_namespace_operations = {
 /**
  * 自己编写的模块的启动方法
  * 无参数
- * @return 0
+ * @return 正常返回 0 非正常返回非 0
  */
 static int __init module_init_function(void){
+    bool resolve_result;
     register_pernet_subsys(&net_namespace_operations);
+    resolve_result = resolve_function_address();
+    if (!resolve_result){
+        return -1;
+    }
     start_install_hooks();
     return 0;
 }

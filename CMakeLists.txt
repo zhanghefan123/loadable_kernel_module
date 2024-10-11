@@ -18,10 +18,11 @@ add_definitions(-D__KERNEL__ -DMODULE)
 add_executable(srv6
         src/api/ftrace_hook_api.c
         src/api/hook_functions_api.c
-        src/hooks/hook_tcp_v4_rcv.c
-        src/hooks/hook_ipv6_rcv.c
-        src/impl/self_defined_tcp_rcv_established.c
-        src/impl/self_defined_tcp_v4_do_rcv.c
+        src/api/check_srv6.c
+        src/hooks/ipv6_rcv/hook.c
+        src/hooks/ipv6_rcv/impl.c
+        src/hooks/ipv6_rcv_finish/impl.c
+        src/hooks/ip6_rcv_finish_core/impl.c
         src/prepare/resolve_function_address.c
         src/tools/tools.c
         src/module_starter.c

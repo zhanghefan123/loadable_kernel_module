@@ -1,8 +1,8 @@
-cmd_/home/zhf/Projects/srv6_kernel/src/api/hook_functions_api.o := gcc -Wp,-MMD,/home/zhf/Projects/srv6_kernel/src/api/.hook_functions_api.o.d -nostdinc -I./arch/x86/include -I./arch/x86/include/generated  -I./include -I./arch/x86/include/uapi -I./arch/x86/include/generated/uapi -I./include/uapi -I./include/generated/uapi -include ./include/linux/compiler-version.h -include ./include/linux/kconfig.h -include ./include/linux/compiler_types.h -D__KERNEL__ -fmacro-prefix-map=./= -Wall -Wundef -Werror=strict-prototypes -Wno-trigraphs -fno-strict-aliasing -fno-common -fshort-wchar -fno-PIE -Werror=implicit-function-declaration -Werror=implicit-int -Werror=return-type -Wno-format-security -std=gnu11 -mno-sse -mno-mmx -mno-sse2 -mno-3dnow -mno-avx -fcf-protection=none -m64 -falign-jumps=1 -falign-loops=1 -mno-80387 -mno-fp-ret-in-387 -mpreferred-stack-boundary=3 -mskip-rax-setup -mtune=generic -mno-red-zone -mcmodel=kernel -Wno-sign-compare -fno-asynchronous-unwind-tables -mindirect-branch=thunk-extern -mindirect-branch-register -mindirect-branch-cs-prefix -mfunction-return=thunk-extern -fno-jump-tables -mharden-sls=all -fno-delete-null-pointer-checks -Wno-frame-address -Wno-format-truncation -Wno-format-overflow -Wno-address-of-packed-member -O2 -fno-allow-store-data-races -Wframe-larger-than=1024 -fstack-protector-strong -Wimplicit-fallthrough=5 -Wno-main -Wno-unused-but-set-variable -Wno-unused-const-variable -fno-omit-frame-pointer -fno-optimize-sibling-calls -fno-stack-clash-protection -fzero-call-used-regs=used-gpr -pg -mrecord-mcount -mfentry -DCC_USING_FENTRY -Wdeclaration-after-statement -Wvla -Wno-pointer-sign -Wcast-function-type -Wno-stringop-truncation -Wno-stringop-overflow -Wno-restrict -Wno-maybe-uninitialized -Wno-alloc-size-larger-than -fno-strict-overflow -fno-stack-check -fconserve-stack -Werror=date-time -Werror=incompatible-pointer-types -Werror=designated-init -Wno-packed-not-aligned -g -gdwarf-5 -I/home/zhf/Projects/srv6_kernel/headers  -fsanitize=bounds -fsanitize=shift -fsanitize=bool -fsanitize=enum  -DMODULE  -DKBUILD_BASENAME='"hook_functions_api"' -DKBUILD_MODNAME='"srv6"' -D__KBUILD_MODNAME=kmod_srv6 -c -o /home/zhf/Projects/srv6_kernel/src/api/hook_functions_api.o /home/zhf/Projects/srv6_kernel/src/api/hook_functions_api.c   ; ./tools/objtool/objtool  --hacks=jump_label  --hacks=noinstr     --retpoline  --rethunk  --sls  --stackval  --static-call  --uaccess   --module  /home/zhf/Projects/srv6_kernel/src/api/hook_functions_api.o
+cmd_/home/zhf/Projects/srv6_test/srv6_kernel/src/api/hook_functions_api.o := gcc -Wp,-MMD,/home/zhf/Projects/srv6_test/srv6_kernel/src/api/.hook_functions_api.o.d -nostdinc -I./arch/x86/include -I./arch/x86/include/generated  -I./include -I./arch/x86/include/uapi -I./arch/x86/include/generated/uapi -I./include/uapi -I./include/generated/uapi -include ./include/linux/compiler-version.h -include ./include/linux/kconfig.h -include ./include/linux/compiler_types.h -D__KERNEL__ -fmacro-prefix-map=./= -Wall -Wundef -Werror=strict-prototypes -Wno-trigraphs -fno-strict-aliasing -fno-common -fshort-wchar -fno-PIE -Werror=implicit-function-declaration -Werror=implicit-int -Werror=return-type -Wno-format-security -std=gnu11 -mno-sse -mno-mmx -mno-sse2 -mno-3dnow -mno-avx -fcf-protection=none -m64 -falign-jumps=1 -falign-loops=1 -mno-80387 -mno-fp-ret-in-387 -mpreferred-stack-boundary=3 -mskip-rax-setup -mtune=generic -mno-red-zone -mcmodel=kernel -Wno-sign-compare -fno-asynchronous-unwind-tables -mindirect-branch=thunk-extern -mindirect-branch-register -mindirect-branch-cs-prefix -mfunction-return=thunk-extern -fno-jump-tables -mharden-sls=all -fno-delete-null-pointer-checks -Wno-frame-address -Wno-format-truncation -Wno-format-overflow -Wno-address-of-packed-member -O2 -fno-allow-store-data-races -Wframe-larger-than=1024 -fstack-protector-strong -Wimplicit-fallthrough=5 -Wno-main -Wno-unused-but-set-variable -Wno-unused-const-variable -fno-omit-frame-pointer -fno-optimize-sibling-calls -fno-stack-clash-protection -fzero-call-used-regs=used-gpr -pg -mrecord-mcount -mfentry -DCC_USING_FENTRY -Wdeclaration-after-statement -Wvla -Wno-pointer-sign -Wcast-function-type -Wno-stringop-truncation -Wno-stringop-overflow -Wno-restrict -Wno-maybe-uninitialized -Wno-alloc-size-larger-than -fno-strict-overflow -fno-stack-check -fconserve-stack -Werror=date-time -Werror=incompatible-pointer-types -Werror=designated-init -Wno-packed-not-aligned -g -gdwarf-5 -I/home/zhf/Projects/srv6_test/srv6_kernel/headers  -fsanitize=bounds -fsanitize=shift -fsanitize=bool -fsanitize=enum  -DMODULE  -DKBUILD_BASENAME='"hook_functions_api"' -DKBUILD_MODNAME='"srv6"' -D__KBUILD_MODNAME=kmod_srv6 -c -o /home/zhf/Projects/srv6_test/srv6_kernel/src/api/hook_functions_api.o /home/zhf/Projects/srv6_test/srv6_kernel/src/api/hook_functions_api.c   ; ./tools/objtool/objtool  --hacks=jump_label  --hacks=noinstr     --retpoline  --rethunk  --sls  --stackval  --static-call  --uaccess   --module  /home/zhf/Projects/srv6_test/srv6_kernel/src/api/hook_functions_api.o
 
-source_/home/zhf/Projects/srv6_kernel/src/api/hook_functions_api.o := /home/zhf/Projects/srv6_kernel/src/api/hook_functions_api.c
+source_/home/zhf/Projects/srv6_test/srv6_kernel/src/api/hook_functions_api.o := /home/zhf/Projects/srv6_test/srv6_kernel/src/api/hook_functions_api.c
 
-deps_/home/zhf/Projects/srv6_kernel/src/api/hook_functions_api.o := \
+deps_/home/zhf/Projects/srv6_test/srv6_kernel/src/api/hook_functions_api.o := \
   include/linux/compiler-version.h \
     $(wildcard include/config/CC_VERSION_TEXT) \
   include/linux/kconfig.h \
@@ -1390,7 +1390,7 @@ deps_/home/zhf/Projects/srv6_kernel/src/api/hook_functions_api.o := \
   include/net/fib_rules.h \
   include/uapi/linux/fib_rules.h \
   include/net/fib_notifier.h \
-  /home/zhf/Projects/srv6_kernel/headers/tools/tools.h \
+  /home/zhf/Projects/srv6_test/srv6_kernel/headers/tools/tools.h \
   include/net/route.h \
   include/net/inetpeer.h \
   include/net/ipv6.h \
@@ -1432,8 +1432,8 @@ deps_/home/zhf/Projects/srv6_kernel/src/api/hook_functions_api.o := \
   include/uapi/linux/route.h \
   include/linux/ip.h \
   include/uapi/linux/ip.h \
-  /home/zhf/Projects/srv6_kernel/headers/api/hook_functions_api.h \
-  /home/zhf/Projects/srv6_kernel/headers/api/ftrace_hook_api.h \
+  /home/zhf/Projects/srv6_test/srv6_kernel/headers/api/hook_functions_api.h \
+  /home/zhf/Projects/srv6_test/srv6_kernel/headers/api/ftrace_hook_api.h \
   include/linux/dirent.h \
   include/linux/ftrace.h \
     $(wildcard include/config/FUNCTION_TRACER) \
@@ -1524,12 +1524,11 @@ deps_/home/zhf/Projects/srv6_kernel/src/api/hook_functions_api.o := \
     $(wildcard include/config/HAVE_PERF_REGS) \
   arch/x86/include/uapi/asm/perf_regs.h \
   include/generated/uapi/linux/version.h \
-  /home/zhf/Projects/srv6_kernel/headers/prepare/resolve_function_address.h \
-  /home/zhf/Projects/srv6_kernel/headers/hooks/hook_tcp_v4_rcv.h \
-  /home/zhf/Projects/srv6_kernel/headers/hooks/hook_ipv6_rcv.h \
+  /home/zhf/Projects/srv6_test/srv6_kernel/headers/prepare/resolve_function_address.h \
+  /home/zhf/Projects/srv6_test/srv6_kernel/headers/hooks/ipv6_rcv/ipv6_rcv.h \
 
-/home/zhf/Projects/srv6_kernel/src/api/hook_functions_api.o: $(deps_/home/zhf/Projects/srv6_kernel/src/api/hook_functions_api.o)
+/home/zhf/Projects/srv6_test/srv6_kernel/src/api/hook_functions_api.o: $(deps_/home/zhf/Projects/srv6_test/srv6_kernel/src/api/hook_functions_api.o)
 
-$(deps_/home/zhf/Projects/srv6_kernel/src/api/hook_functions_api.o):
+$(deps_/home/zhf/Projects/srv6_test/srv6_kernel/src/api/hook_functions_api.o):
 
-/home/zhf/Projects/srv6_kernel/src/api/hook_functions_api.o: $(wildcard ./tools/objtool/objtool)
+/home/zhf/Projects/srv6_test/srv6_kernel/src/api/hook_functions_api.o: $(wildcard ./tools/objtool/objtool)

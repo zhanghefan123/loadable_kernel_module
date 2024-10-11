@@ -6,8 +6,7 @@
 #include "api/hook_functions_api.h"
 #include "api/ftrace_hook_api.h"
 #include "prepare/resolve_function_address.h"
-#include "hooks/hook_tcp_v4_rcv.h"
-#include "hooks/hook_ipv6_rcv.h"
+#include "hooks/ipv6_rcv/ipv6_rcv.h"
 
 // 我们添加的 hook 列表, 假设最多10个
 struct ftrace_hook hooks[MAXIMUM_SUPPORTED_HOOK_FUNCTIONS];
@@ -16,9 +15,7 @@ struct ftrace_hook hooks[MAXIMUM_SUPPORTED_HOOK_FUNCTIONS];
 int number_of_hook = 0;
 
 // 进行hook的安装
-int install_hook_functions(void) {
-    resolve_function_address();
-    //    add_tcp_v4_do_rcv_to_hook();
+int install_hook_functions(void){
     add_ipv6_rcv_to_hook();
     fh_install_hooks(hooks, number_of_hook);
     LOG_WITH_PREFIX("already install hooks");

@@ -1,8 +1,8 @@
-cmd_/home/zhf/Projects/srv6_test/srv6_kernel/src/hooks/hook_ipv6_rcv.o := gcc -Wp,-MMD,/home/zhf/Projects/srv6_test/srv6_kernel/src/hooks/.hook_ipv6_rcv.o.d -nostdinc -I./arch/x86/include -I./arch/x86/include/generated  -I./include -I./arch/x86/include/uapi -I./arch/x86/include/generated/uapi -I./include/uapi -I./include/generated/uapi -include ./include/linux/compiler-version.h -include ./include/linux/kconfig.h -include ./include/linux/compiler_types.h -D__KERNEL__ -fmacro-prefix-map=./= -Wall -Wundef -Werror=strict-prototypes -Wno-trigraphs -fno-strict-aliasing -fno-common -fshort-wchar -fno-PIE -Werror=implicit-function-declaration -Werror=implicit-int -Werror=return-type -Wno-format-security -std=gnu11 -mno-sse -mno-mmx -mno-sse2 -mno-3dnow -mno-avx -fcf-protection=none -m64 -falign-jumps=1 -falign-loops=1 -mno-80387 -mno-fp-ret-in-387 -mpreferred-stack-boundary=3 -mskip-rax-setup -mtune=generic -mno-red-zone -mcmodel=kernel -Wno-sign-compare -fno-asynchronous-unwind-tables -mindirect-branch=thunk-extern -mindirect-branch-register -mindirect-branch-cs-prefix -mfunction-return=thunk-extern -fno-jump-tables -mharden-sls=all -fno-delete-null-pointer-checks -Wno-frame-address -Wno-format-truncation -Wno-format-overflow -Wno-address-of-packed-member -O2 -fno-allow-store-data-races -Wframe-larger-than=1024 -fstack-protector-strong -Wimplicit-fallthrough=5 -Wno-main -Wno-unused-but-set-variable -Wno-unused-const-variable -fno-omit-frame-pointer -fno-optimize-sibling-calls -fno-stack-clash-protection -fzero-call-used-regs=used-gpr -pg -mrecord-mcount -mfentry -DCC_USING_FENTRY -Wdeclaration-after-statement -Wvla -Wno-pointer-sign -Wcast-function-type -Wno-stringop-truncation -Wno-stringop-overflow -Wno-restrict -Wno-maybe-uninitialized -Wno-alloc-size-larger-than -fno-strict-overflow -fno-stack-check -fconserve-stack -Werror=date-time -Werror=incompatible-pointer-types -Werror=designated-init -Wno-packed-not-aligned -g -gdwarf-5 -I/home/zhf/Projects/srv6_test/srv6_kernel/headers  -fsanitize=bounds -fsanitize=shift -fsanitize=bool -fsanitize=enum  -DMODULE  -DKBUILD_BASENAME='"hook_ipv6_rcv"' -DKBUILD_MODNAME='"srv6"' -D__KBUILD_MODNAME=kmod_srv6 -c -o /home/zhf/Projects/srv6_test/srv6_kernel/src/hooks/hook_ipv6_rcv.o /home/zhf/Projects/srv6_test/srv6_kernel/src/hooks/hook_ipv6_rcv.c   ; ./tools/objtool/objtool  --hacks=jump_label  --hacks=noinstr     --retpoline  --rethunk  --sls  --stackval  --static-call  --uaccess   --module  /home/zhf/Projects/srv6_test/srv6_kernel/src/hooks/hook_ipv6_rcv.o
+cmd_/home/zhf/Projects/srv6_test/srv6_kernel/src/api/check_srv6.o := gcc -Wp,-MMD,/home/zhf/Projects/srv6_test/srv6_kernel/src/api/.check_srv6.o.d -nostdinc -I./arch/x86/include -I./arch/x86/include/generated  -I./include -I./arch/x86/include/uapi -I./arch/x86/include/generated/uapi -I./include/uapi -I./include/generated/uapi -include ./include/linux/compiler-version.h -include ./include/linux/kconfig.h -include ./include/linux/compiler_types.h -D__KERNEL__ -fmacro-prefix-map=./= -Wall -Wundef -Werror=strict-prototypes -Wno-trigraphs -fno-strict-aliasing -fno-common -fshort-wchar -fno-PIE -Werror=implicit-function-declaration -Werror=implicit-int -Werror=return-type -Wno-format-security -std=gnu11 -mno-sse -mno-mmx -mno-sse2 -mno-3dnow -mno-avx -fcf-protection=none -m64 -falign-jumps=1 -falign-loops=1 -mno-80387 -mno-fp-ret-in-387 -mpreferred-stack-boundary=3 -mskip-rax-setup -mtune=generic -mno-red-zone -mcmodel=kernel -Wno-sign-compare -fno-asynchronous-unwind-tables -mindirect-branch=thunk-extern -mindirect-branch-register -mindirect-branch-cs-prefix -mfunction-return=thunk-extern -fno-jump-tables -mharden-sls=all -fno-delete-null-pointer-checks -Wno-frame-address -Wno-format-truncation -Wno-format-overflow -Wno-address-of-packed-member -O2 -fno-allow-store-data-races -Wframe-larger-than=1024 -fstack-protector-strong -Wimplicit-fallthrough=5 -Wno-main -Wno-unused-but-set-variable -Wno-unused-const-variable -fno-omit-frame-pointer -fno-optimize-sibling-calls -fno-stack-clash-protection -fzero-call-used-regs=used-gpr -pg -mrecord-mcount -mfentry -DCC_USING_FENTRY -Wdeclaration-after-statement -Wvla -Wno-pointer-sign -Wcast-function-type -Wno-stringop-truncation -Wno-stringop-overflow -Wno-restrict -Wno-maybe-uninitialized -Wno-alloc-size-larger-than -fno-strict-overflow -fno-stack-check -fconserve-stack -Werror=date-time -Werror=incompatible-pointer-types -Werror=designated-init -Wno-packed-not-aligned -g -gdwarf-5 -I/home/zhf/Projects/srv6_test/srv6_kernel/headers  -fsanitize=bounds -fsanitize=shift -fsanitize=bool -fsanitize=enum  -DMODULE  -DKBUILD_BASENAME='"check_srv6"' -DKBUILD_MODNAME='"srv6"' -D__KBUILD_MODNAME=kmod_srv6 -c -o /home/zhf/Projects/srv6_test/srv6_kernel/src/api/check_srv6.o /home/zhf/Projects/srv6_test/srv6_kernel/src/api/check_srv6.c   ; ./tools/objtool/objtool  --hacks=jump_label  --hacks=noinstr     --retpoline  --rethunk  --sls  --stackval  --static-call  --uaccess   --module  /home/zhf/Projects/srv6_test/srv6_kernel/src/api/check_srv6.o
 
-source_/home/zhf/Projects/srv6_test/srv6_kernel/src/hooks/hook_ipv6_rcv.o := /home/zhf/Projects/srv6_test/srv6_kernel/src/hooks/hook_ipv6_rcv.c
+source_/home/zhf/Projects/srv6_test/srv6_kernel/src/api/check_srv6.o := /home/zhf/Projects/srv6_test/srv6_kernel/src/api/check_srv6.c
 
-deps_/home/zhf/Projects/srv6_test/srv6_kernel/src/hooks/hook_ipv6_rcv.o := \
+deps_/home/zhf/Projects/srv6_test/srv6_kernel/src/api/check_srv6.o := \
   include/linux/compiler-version.h \
     $(wildcard include/config/CC_VERSION_TEXT) \
   include/linux/kconfig.h \
@@ -20,18 +20,19 @@ deps_/home/zhf/Projects/srv6_test/srv6_kernel/src/hooks/hook_ipv6_rcv.o := \
     $(wildcard include/config/ARCH_USE_BUILTIN_BSWAP) \
     $(wildcard include/config/SHADOW_CALL_STACK) \
     $(wildcard include/config/KCOV) \
-  /home/zhf/Projects/srv6_test/srv6_kernel/headers/tools/tools.h \
-  include/net/route.h \
-  include/net/dst.h \
-    $(wildcard include/config/XFRM) \
-    $(wildcard include/config/64BIT) \
-    $(wildcard include/config/IP_ROUTE_CLASSID) \
-  include/net/dst_ops.h \
+  /home/zhf/Projects/srv6_test/srv6_kernel/headers/api/check_srv6.h \
+  include/net/ip.h \
+    $(wildcard include/config/NET_L3_MASTER_DEV) \
+    $(wildcard include/config/SYSCTL) \
+    $(wildcard include/config/INET) \
+    $(wildcard include/config/IPV6) \
+    $(wildcard include/config/PROC_FS) \
   include/linux/types.h \
     $(wildcard include/config/HAVE_UID16) \
     $(wildcard include/config/UID16) \
     $(wildcard include/config/ARCH_DMA_ADDR_T_64BIT) \
     $(wildcard include/config/PHYS_ADDR_T_64BIT) \
+    $(wildcard include/config/64BIT) \
     $(wildcard include/config/ARCH_32BIT_USTAT_F_TINODE) \
   include/uapi/linux/types.h \
   arch/x86/include/generated/uapi/asm/types.h \
@@ -49,20 +50,56 @@ deps_/home/zhf/Projects/srv6_test/srv6_kernel/src/hooks/hook_ipv6_rcv.o := \
     $(wildcard include/config/X86_32) \
   arch/x86/include/uapi/asm/posix_types_64.h \
   include/uapi/asm-generic/posix_types.h \
-  include/linux/percpu_counter.h \
+  include/linux/ip.h \
+  include/linux/skbuff.h \
+    $(wildcard include/config/NF_CONNTRACK) \
+    $(wildcard include/config/BRIDGE_NETFILTER) \
+    $(wildcard include/config/NET_TC_SKB_EXT) \
+    $(wildcard include/config/HIGHMEM) \
+    $(wildcard include/config/DEBUG_KMAP_LOCAL_FORCE_MAP) \
+    $(wildcard include/config/NET_SOCK_MSG) \
+    $(wildcard include/config/SKB_EXTENSIONS) \
+    $(wildcard include/config/NET_CLS_ACT) \
+    $(wildcard include/config/IPV6_NDISC_NODETYPE) \
+    $(wildcard include/config/NET_SWITCHDEV) \
+    $(wildcard include/config/NET_REDIRECT) \
+    $(wildcard include/config/NETFILTER_SKIP_EGRESS) \
+    $(wildcard include/config/TLS_DEVICE) \
+    $(wildcard include/config/NET_SCHED) \
+    $(wildcard include/config/NET_RX_BUSY_POLL) \
+    $(wildcard include/config/XPS) \
+    $(wildcard include/config/NETWORK_SECMARK) \
+    $(wildcard include/config/TRACEPOINTS) \
+    $(wildcard include/config/DEBUG_NET) \
+    $(wildcard include/config/PAGE_POOL) \
+    $(wildcard include/config/HAVE_EFFICIENT_UNALIGNED_ACCESS) \
+    $(wildcard include/config/NETWORK_PHY_TIMESTAMPING) \
+    $(wildcard include/config/XFRM) \
+    $(wildcard include/config/MPTCP) \
+    $(wildcard include/config/MCTP_FLOWS) \
+    $(wildcard include/config/NETFILTER_XT_TARGET_TRACE) \
+    $(wildcard include/config/NF_TABLES) \
+    $(wildcard include/config/IP_VS) \
+  include/linux/kernel.h \
+    $(wildcard include/config/PREEMPT_VOLUNTARY_BUILD) \
+    $(wildcard include/config/PREEMPT_DYNAMIC) \
+    $(wildcard include/config/HAVE_PREEMPT_DYNAMIC_CALL) \
+    $(wildcard include/config/HAVE_PREEMPT_DYNAMIC_KEY) \
+    $(wildcard include/config/PREEMPT_) \
+    $(wildcard include/config/DEBUG_ATOMIC_SLEEP) \
     $(wildcard include/config/SMP) \
-    $(wildcard include/config/HOTPLUG_CPU) \
-  include/linux/spinlock.h \
-    $(wildcard include/config/DEBUG_SPINLOCK) \
-    $(wildcard include/config/PREEMPTION) \
-    $(wildcard include/config/DEBUG_LOCK_ALLOC) \
-    $(wildcard include/config/PREEMPT_RT) \
-  include/linux/typecheck.h \
-  include/linux/preempt.h \
-    $(wildcard include/config/PREEMPT_COUNT) \
-    $(wildcard include/config/DEBUG_PREEMPT) \
-    $(wildcard include/config/TRACE_PREEMPT_TOGGLE) \
-    $(wildcard include/config/PREEMPT_NOTIFIERS) \
+    $(wildcard include/config/MMU) \
+    $(wildcard include/config/PROVE_LOCKING) \
+    $(wildcard include/config/TRACING) \
+    $(wildcard include/config/FTRACE_MCOUNT_RECORD) \
+  include/linux/stdarg.h \
+  include/linux/align.h \
+  include/linux/const.h \
+  include/vdso/const.h \
+  include/uapi/linux/const.h \
+  include/linux/limits.h \
+  include/uapi/linux/limits.h \
+  include/vdso/limits.h \
   include/linux/linkage.h \
     $(wildcard include/config/ARCH_USE_SYM_ANNOTATIONS) \
   include/linux/stringify.h \
@@ -92,55 +129,29 @@ deps_/home/zhf/Projects/srv6_test/srv6_kernel/src/hooks/hook_ipv6_rcv.o := \
     $(wildcard include/config/SLS) \
   arch/x86/include/asm/ibt.h \
     $(wildcard include/config/X86_KERNEL_IBT) \
-  include/linux/list.h \
-    $(wildcard include/config/DEBUG_LIST) \
   include/linux/container_of.h \
   include/linux/build_bug.h \
   include/linux/err.h \
   arch/x86/include/generated/uapi/asm/errno.h \
   include/uapi/asm-generic/errno.h \
   include/uapi/asm-generic/errno-base.h \
-  include/linux/poison.h \
-    $(wildcard include/config/ILLEGAL_POINTER_VALUE) \
-  include/linux/const.h \
-  include/vdso/const.h \
-  include/uapi/linux/const.h \
-  arch/x86/include/asm/barrier.h \
-  arch/x86/include/asm/alternative.h \
-  arch/x86/include/asm/asm.h \
-    $(wildcard include/config/KPROBES) \
-  arch/x86/include/asm/extable_fixup_types.h \
-  arch/x86/include/asm/nops.h \
-  include/asm-generic/barrier.h \
-  arch/x86/include/asm/preempt.h \
-    $(wildcard include/config/PREEMPT_DYNAMIC) \
-  arch/x86/include/asm/rmwcc.h \
-    $(wildcard include/config/CC_HAS_ASM_GOTO) \
-  arch/x86/include/asm/percpu.h \
-    $(wildcard include/config/X86_64_SMP) \
-    $(wildcard include/config/X86_CMPXCHG64) \
-  include/linux/kernel.h \
-    $(wildcard include/config/PREEMPT_VOLUNTARY_BUILD) \
-    $(wildcard include/config/HAVE_PREEMPT_DYNAMIC_CALL) \
-    $(wildcard include/config/HAVE_PREEMPT_DYNAMIC_KEY) \
-    $(wildcard include/config/PREEMPT_) \
-    $(wildcard include/config/DEBUG_ATOMIC_SLEEP) \
-    $(wildcard include/config/MMU) \
-    $(wildcard include/config/PROVE_LOCKING) \
-    $(wildcard include/config/TRACING) \
-    $(wildcard include/config/FTRACE_MCOUNT_RECORD) \
-  include/linux/stdarg.h \
-  include/linux/align.h \
-  include/linux/limits.h \
-  include/uapi/linux/limits.h \
-  include/vdso/limits.h \
   include/linux/bitops.h \
   include/linux/bits.h \
   include/vdso/bits.h \
+  include/linux/typecheck.h \
   include/uapi/linux/kernel.h \
   include/uapi/linux/sysinfo.h \
   arch/x86/include/asm/bitops.h \
     $(wildcard include/config/X86_CMOV) \
+  arch/x86/include/asm/alternative.h \
+  arch/x86/include/asm/asm.h \
+    $(wildcard include/config/KPROBES) \
+  arch/x86/include/asm/extable_fixup_types.h \
+  arch/x86/include/asm/rmwcc.h \
+    $(wildcard include/config/CC_HAS_ASM_GOTO) \
+  arch/x86/include/asm/barrier.h \
+  arch/x86/include/asm/nops.h \
+  include/asm-generic/barrier.h \
   include/asm-generic/bitops/sched.h \
   arch/x86/include/asm/arch_hweight.h \
   arch/x86/include/asm/cpufeatures.h \
@@ -148,6 +159,7 @@ deps_/home/zhf/Projects/srv6_test/srv6_kernel/src/hooks/hook_ipv6_rcv.o := \
     $(wildcard include/config/X86_MINIMUM_CPU_FAMILY) \
     $(wildcard include/config/MATH_EMULATION) \
     $(wildcard include/config/X86_PAE) \
+    $(wildcard include/config/X86_CMPXCHG64) \
     $(wildcard include/config/X86_P6_NOP) \
     $(wildcard include/config/MATOM) \
     $(wildcard include/config/PARAVIRT_XXL) \
@@ -206,6 +218,8 @@ deps_/home/zhf/Projects/srv6_test/srv6_kernel/src/hooks/hook_ipv6_rcv.o := \
     $(wildcard include/config/HZ) \
   include/uapi/asm-generic/param.h \
   include/linux/spinlock_types_raw.h \
+    $(wildcard include/config/DEBUG_SPINLOCK) \
+    $(wildcard include/config/DEBUG_LOCK_ALLOC) \
   arch/x86/include/asm/spinlock_types.h \
   include/asm-generic/qspinlock_types.h \
     $(wildcard include/config/NR_CPUS) \
@@ -225,53 +239,39 @@ deps_/home/zhf/Projects/srv6_test/srv6_kernel/src/hooks/hook_ipv6_rcv.o := \
     $(wildcard include/config/HAVE_STATIC_CALL) \
     $(wildcard include/config/HAVE_STATIC_CALL_INLINE) \
   include/linux/instruction_pointer.h \
-  include/asm-generic/percpu.h \
-    $(wildcard include/config/HAVE_SETUP_PER_CPU_AREA) \
-  include/linux/threads.h \
-    $(wildcard include/config/BASE_SMALL) \
-  include/linux/percpu-defs.h \
-    $(wildcard include/config/DEBUG_FORCE_WEAK_PER_CPU) \
-    $(wildcard include/config/AMD_MEM_ENCRYPT) \
-  include/linux/thread_info.h \
-    $(wildcard include/config/THREAD_INFO_IN_TASK) \
-    $(wildcard include/config/GENERIC_ENTRY) \
-    $(wildcard include/config/HAVE_ARCH_WITHIN_STACK_FRAMES) \
-    $(wildcard include/config/HARDENED_USERCOPY) \
-    $(wildcard include/config/BUG) \
-  include/linux/bug.h \
-    $(wildcard include/config/GENERIC_BUG) \
-    $(wildcard include/config/BUG_ON_DATA_CORRUPTION) \
-  arch/x86/include/asm/bug.h \
-    $(wildcard include/config/DEBUG_BUGVERBOSE) \
-  include/linux/instrumentation.h \
-    $(wildcard include/config/NOINSTR_VALIDATION) \
-  include/linux/objtool.h \
-    $(wildcard include/config/FRAME_POINTER) \
-  include/asm-generic/bug.h \
-    $(wildcard include/config/GENERIC_BUG_RELATIVE_POINTERS) \
-  include/linux/restart_block.h \
-  include/linux/time64.h \
+  include/linux/time.h \
+    $(wildcard include/config/POSIX_TIMERS) \
+  include/linux/cache.h \
+    $(wildcard include/config/ARCH_HAS_CACHE_LINE_SIZE) \
+  arch/x86/include/asm/cache.h \
+    $(wildcard include/config/X86_L1_CACHE_SHIFT) \
+    $(wildcard include/config/X86_INTERNODE_CACHE_SHIFT) \
+    $(wildcard include/config/X86_VSMP) \
   include/linux/math64.h \
     $(wildcard include/config/ARCH_SUPPORTS_INT128) \
   include/vdso/math64.h \
+  include/linux/time64.h \
   include/vdso/time64.h \
   include/uapi/linux/time.h \
   include/uapi/linux/time_types.h \
-  include/linux/errno.h \
-  include/uapi/linux/errno.h \
-  arch/x86/include/asm/current.h \
-  arch/x86/include/asm/thread_info.h \
-    $(wildcard include/config/VM86) \
+  include/linux/time32.h \
+  include/linux/timex.h \
+  include/uapi/linux/timex.h \
+  arch/x86/include/asm/timex.h \
+    $(wildcard include/config/X86_TSC) \
+  arch/x86/include/asm/processor.h \
+    $(wildcard include/config/X86_VMX_FEATURE_NAMES) \
     $(wildcard include/config/X86_IOPL_IOPERM) \
-    $(wildcard include/config/COMPAT) \
-    $(wildcard include/config/IA32_EMULATION) \
-  arch/x86/include/asm/page.h \
-  arch/x86/include/asm/page_types.h \
-    $(wildcard include/config/PHYSICAL_START) \
-    $(wildcard include/config/PHYSICAL_ALIGN) \
-    $(wildcard include/config/DYNAMIC_PHYSICAL_MASK) \
+    $(wildcard include/config/STACKPROTECTOR) \
+    $(wildcard include/config/VM86) \
+    $(wildcard include/config/X86_DEBUGCTLMSR) \
+    $(wildcard include/config/CPU_SUP_AMD) \
+    $(wildcard include/config/XEN) \
+  arch/x86/include/asm/processor-flags.h \
+  arch/x86/include/uapi/asm/processor-flags.h \
   include/linux/mem_encrypt.h \
     $(wildcard include/config/ARCH_HAS_MEM_ENCRYPT) \
+    $(wildcard include/config/AMD_MEM_ENCRYPT) \
   arch/x86/include/asm/mem_encrypt.h \
   include/linux/cc_platform.h \
     $(wildcard include/config/ARCH_HAS_CC_PLATFORM) \
@@ -291,41 +291,22 @@ deps_/home/zhf/Projects/srv6_test/srv6_kernel/src/hooks/hook_ipv6_rcv.o := \
   include/video/edid.h \
     $(wildcard include/config/X86) \
   include/uapi/video/edid.h \
+  arch/x86/include/asm/math_emu.h \
+  arch/x86/include/asm/ptrace.h \
+    $(wildcard include/config/PARAVIRT) \
+    $(wildcard include/config/IA32_EMULATION) \
+  arch/x86/include/asm/segment.h \
+    $(wildcard include/config/XEN_PV) \
+  arch/x86/include/asm/page_types.h \
+    $(wildcard include/config/PHYSICAL_START) \
+    $(wildcard include/config/PHYSICAL_ALIGN) \
+    $(wildcard include/config/DYNAMIC_PHYSICAL_MASK) \
   arch/x86/include/asm/page_64_types.h \
     $(wildcard include/config/KASAN) \
     $(wildcard include/config/DYNAMIC_MEMORY_LAYOUT) \
     $(wildcard include/config/RANDOMIZE_BASE) \
   arch/x86/include/asm/kaslr.h \
     $(wildcard include/config/RANDOMIZE_MEMORY) \
-  arch/x86/include/asm/page_64.h \
-    $(wildcard include/config/DEBUG_VIRTUAL) \
-    $(wildcard include/config/FLATMEM) \
-    $(wildcard include/config/X86_VSYSCALL_EMULATION) \
-  include/linux/range.h \
-  include/asm-generic/memory_model.h \
-    $(wildcard include/config/SPARSEMEM_VMEMMAP) \
-    $(wildcard include/config/SPARSEMEM) \
-  include/linux/pfn.h \
-  include/asm-generic/getorder.h \
-  arch/x86/include/asm/cpufeature.h \
-    $(wildcard include/config/X86_FEATURE_NAMES) \
-  arch/x86/include/asm/processor.h \
-    $(wildcard include/config/X86_VSMP) \
-    $(wildcard include/config/X86_VMX_FEATURE_NAMES) \
-    $(wildcard include/config/STACKPROTECTOR) \
-    $(wildcard include/config/X86_DEBUGCTLMSR) \
-    $(wildcard include/config/CPU_SUP_AMD) \
-    $(wildcard include/config/XEN) \
-  arch/x86/include/asm/processor-flags.h \
-  arch/x86/include/uapi/asm/processor-flags.h \
-  arch/x86/include/asm/math_emu.h \
-  arch/x86/include/asm/ptrace.h \
-    $(wildcard include/config/PARAVIRT) \
-  arch/x86/include/asm/segment.h \
-    $(wildcard include/config/XEN_PV) \
-  arch/x86/include/asm/cache.h \
-    $(wildcard include/config/X86_L1_CACHE_SHIFT) \
-    $(wildcard include/config/X86_INTERNODE_CACHE_SHIFT) \
   arch/x86/include/uapi/asm/ptrace.h \
   arch/x86/include/uapi/asm/ptrace-abi.h \
   arch/x86/include/asm/paravirt_types.h \
@@ -335,34 +316,57 @@ deps_/home/zhf/Projects/srv6_test/srv6_kernel/src/hooks/hook_ipv6_rcv.o := \
   arch/x86/include/asm/pgtable_types.h \
     $(wildcard include/config/MEM_SOFT_DIRTY) \
     $(wildcard include/config/HAVE_ARCH_USERFAULTFD_WP) \
-    $(wildcard include/config/PROC_FS) \
   arch/x86/include/asm/pgtable_64_types.h \
-    $(wildcard include/config/DEBUG_KMAP_LOCAL_FORCE_MAP) \
   arch/x86/include/asm/sparsemem.h \
+    $(wildcard include/config/SPARSEMEM) \
     $(wildcard include/config/NUMA_KEEP_MEMINFO) \
   arch/x86/include/asm/nospec-branch.h \
     $(wildcard include/config/DEBUG_ENTRY) \
     $(wildcard include/config/CPU_IBPB_ENTRY) \
   include/linux/static_key.h \
+  include/linux/objtool.h \
+    $(wildcard include/config/FRAME_POINTER) \
   arch/x86/include/asm/msr-index.h \
   arch/x86/include/asm/unwind_hints.h \
   arch/x86/include/asm/orc_types.h \
+  arch/x86/include/asm/percpu.h \
+    $(wildcard include/config/X86_64_SMP) \
+  include/asm-generic/percpu.h \
+    $(wildcard include/config/DEBUG_PREEMPT) \
+    $(wildcard include/config/HAVE_SETUP_PER_CPU_AREA) \
+  include/linux/threads.h \
+    $(wildcard include/config/BASE_SMALL) \
+  include/linux/percpu-defs.h \
+    $(wildcard include/config/DEBUG_FORCE_WEAK_PER_CPU) \
   arch/x86/include/asm/GEN-for-each-reg.h \
   arch/x86/include/asm/proto.h \
   arch/x86/include/uapi/asm/ldt.h \
   arch/x86/include/uapi/asm/sigcontext.h \
+  arch/x86/include/asm/current.h \
+  arch/x86/include/asm/page.h \
+  arch/x86/include/asm/page_64.h \
+    $(wildcard include/config/DEBUG_VIRTUAL) \
+    $(wildcard include/config/FLATMEM) \
+    $(wildcard include/config/X86_VSYSCALL_EMULATION) \
+  include/linux/range.h \
+  include/asm-generic/memory_model.h \
+    $(wildcard include/config/SPARSEMEM_VMEMMAP) \
+  include/linux/pfn.h \
+  include/asm-generic/getorder.h \
   arch/x86/include/asm/msr.h \
-    $(wildcard include/config/TRACEPOINTS) \
   arch/x86/include/asm/msr-index.h \
   arch/x86/include/asm/cpumask.h \
   include/linux/cpumask.h \
     $(wildcard include/config/CPUMASK_OFFSTACK) \
+    $(wildcard include/config/HOTPLUG_CPU) \
     $(wildcard include/config/DEBUG_PER_CPU_MAPS) \
   include/linux/bitmap.h \
   include/linux/find.h \
   include/linux/string.h \
     $(wildcard include/config/BINARY_PRINTF) \
     $(wildcard include/config/FORTIFY_SOURCE) \
+  include/linux/errno.h \
+  include/uapi/linux/errno.h \
   include/uapi/linux/string.h \
   arch/x86/include/asm/string.h \
   arch/x86/include/asm/string_64.h \
@@ -377,6 +381,16 @@ deps_/home/zhf/Projects/srv6_test/srv6_kernel/src/hooks/hook_ipv6_rcv.o := \
     $(wildcard include/config/GENERIC_ATOMIC64) \
   include/linux/atomic/atomic-long.h \
   include/linux/atomic/atomic-instrumented.h \
+  include/linux/bug.h \
+    $(wildcard include/config/GENERIC_BUG) \
+    $(wildcard include/config/BUG_ON_DATA_CORRUPTION) \
+  arch/x86/include/asm/bug.h \
+    $(wildcard include/config/DEBUG_BUGVERBOSE) \
+  include/linux/instrumentation.h \
+    $(wildcard include/config/NOINSTR_VALIDATION) \
+  include/asm-generic/bug.h \
+    $(wildcard include/config/BUG) \
+    $(wildcard include/config/GENERIC_BUG_RELATIVE_POINTERS) \
   arch/x86/include/uapi/asm/msr.h \
   arch/x86/include/asm/shared/msr.h \
   include/linux/tracepoint-defs.h \
@@ -386,6 +400,7 @@ deps_/home/zhf/Projects/srv6_test/srv6_kernel/src/hooks/hook_ipv6_rcv.o := \
   arch/x86/include/asm/special_insns.h \
   include/linux/irqflags.h \
     $(wildcard include/config/TRACE_IRQFLAGS) \
+    $(wildcard include/config/PREEMPT_RT) \
     $(wildcard include/config/IRQSOFF_TRACER) \
     $(wildcard include/config/PREEMPT_TRACER) \
     $(wildcard include/config/DEBUG_IRQFLAGS) \
@@ -396,8 +411,50 @@ deps_/home/zhf/Projects/srv6_test/srv6_kernel/src/hooks/hook_ipv6_rcv.o := \
   arch/x86/include/asm/vdso/processor.h \
   include/linux/personality.h \
   include/uapi/linux/personality.h \
-  include/linux/cache.h \
-    $(wildcard include/config/ARCH_HAS_CACHE_LINE_SIZE) \
+  arch/x86/include/asm/tsc.h \
+  arch/x86/include/asm/cpufeature.h \
+    $(wildcard include/config/X86_FEATURE_NAMES) \
+  include/vdso/time32.h \
+  include/vdso/time.h \
+  include/linux/bvec.h \
+  include/linux/highmem.h \
+  include/linux/fs.h \
+    $(wildcard include/config/READ_ONLY_THP_FOR_FS) \
+    $(wildcard include/config/FS_POSIX_ACL) \
+    $(wildcard include/config/SECURITY) \
+    $(wildcard include/config/CGROUP_WRITEBACK) \
+    $(wildcard include/config/IMA) \
+    $(wildcard include/config/FILE_LOCKING) \
+    $(wildcard include/config/FSNOTIFY) \
+    $(wildcard include/config/FS_ENCRYPTION) \
+    $(wildcard include/config/FS_VERITY) \
+    $(wildcard include/config/PREEMPTION) \
+    $(wildcard include/config/EPOLL) \
+    $(wildcard include/config/UNICODE) \
+    $(wildcard include/config/COMPAT) \
+    $(wildcard include/config/QUOTA) \
+    $(wildcard include/config/FS_DAX) \
+    $(wildcard include/config/BLOCK) \
+    $(wildcard include/config/MIGRATION) \
+  include/linux/wait_bit.h \
+  include/linux/wait.h \
+  include/linux/list.h \
+    $(wildcard include/config/DEBUG_LIST) \
+  include/linux/poison.h \
+    $(wildcard include/config/ILLEGAL_POINTER_VALUE) \
+  include/linux/spinlock.h \
+  include/linux/preempt.h \
+    $(wildcard include/config/PREEMPT_COUNT) \
+    $(wildcard include/config/TRACE_PREEMPT_TOGGLE) \
+    $(wildcard include/config/PREEMPT_NOTIFIERS) \
+  arch/x86/include/asm/preempt.h \
+  include/linux/thread_info.h \
+    $(wildcard include/config/THREAD_INFO_IN_TASK) \
+    $(wildcard include/config/GENERIC_ENTRY) \
+    $(wildcard include/config/HAVE_ARCH_WITHIN_STACK_FRAMES) \
+    $(wildcard include/config/HARDENED_USERCOPY) \
+  include/linux/restart_block.h \
+  arch/x86/include/asm/thread_info.h \
   include/linux/bottom_half.h \
   include/linux/lockdep.h \
     $(wildcard include/config/DEBUG_LOCKING_API_SELFTESTS) \
@@ -452,22 +509,74 @@ deps_/home/zhf/Projects/srv6_test/srv6_kernel/src/hooks/hook_ipv6_rcv.o := \
     $(wildcard include/config/INLINE_WRITE_UNLOCK_IRQ) \
     $(wildcard include/config/INLINE_READ_UNLOCK_IRQRESTORE) \
     $(wildcard include/config/INLINE_WRITE_UNLOCK_IRQRESTORE) \
-  include/linux/percpu.h \
-    $(wildcard include/config/NEED_PER_CPU_EMBED_FIRST_CHUNK) \
-    $(wildcard include/config/NEED_PER_CPU_PAGE_FIRST_CHUNK) \
-  include/linux/mmdebug.h \
-    $(wildcard include/config/DEBUG_VM) \
-    $(wildcard include/config/DEBUG_VM_PGFLAGS) \
+  include/uapi/linux/wait.h \
+  include/linux/kdev_t.h \
+  include/uapi/linux/kdev_t.h \
+  include/linux/dcache.h \
+  include/linux/rculist.h \
+    $(wildcard include/config/PROVE_RCU_LIST) \
+  include/linux/rcupdate.h \
+    $(wildcard include/config/PREEMPT_RCU) \
+    $(wildcard include/config/TINY_RCU) \
+    $(wildcard include/config/RCU_STRICT_GRACE_PERIOD) \
+    $(wildcard include/config/TASKS_RCU_GENERIC) \
+    $(wildcard include/config/RCU_STALL_COMMON) \
+    $(wildcard include/config/NO_HZ_FULL) \
+    $(wildcard include/config/RCU_NOCB_CPU) \
+    $(wildcard include/config/TASKS_RCU) \
+    $(wildcard include/config/TASKS_TRACE_RCU) \
+    $(wildcard include/config/TASKS_RUDE_RCU) \
+    $(wildcard include/config/TREE_RCU) \
+    $(wildcard include/config/DEBUG_OBJECTS_RCU_HEAD) \
+    $(wildcard include/config/PROVE_RCU) \
+    $(wildcard include/config/ARCH_WEAK_RELEASE_ACQUIRE) \
+  include/linux/rcutree.h \
+  include/linux/rculist_bl.h \
+  include/linux/list_bl.h \
+  include/linux/bit_spinlock.h \
+  include/linux/seqlock.h \
+  include/linux/mutex.h \
+    $(wildcard include/config/MUTEX_SPIN_ON_OWNER) \
+    $(wildcard include/config/DEBUG_MUTEXES) \
+  include/linux/osq_lock.h \
+  include/linux/debug_locks.h \
+  include/linux/lockref.h \
+    $(wildcard include/config/ARCH_USE_CMPXCHG_LOCKREF) \
+  include/generated/bounds.h \
+  include/linux/stringhash.h \
+    $(wildcard include/config/DCACHE_WORD_ACCESS) \
+  include/linux/hash.h \
+    $(wildcard include/config/HAVE_ARCH_HASH) \
+  include/linux/path.h \
+  include/linux/stat.h \
+  arch/x86/include/uapi/asm/stat.h \
+  include/uapi/linux/stat.h \
+  include/linux/uidgid.h \
+    $(wildcard include/config/MULTIUSER) \
+    $(wildcard include/config/USER_NS) \
+  include/linux/highuid.h \
+  include/linux/list_lru.h \
+    $(wildcard include/config/MEMCG_KMEM) \
+  include/linux/nodemask.h \
+    $(wildcard include/config/NUMA) \
+  include/linux/numa.h \
+    $(wildcard include/config/NODES_SHIFT) \
+    $(wildcard include/config/HAVE_ARCH_NODE_DEV_GROUP) \
+  include/linux/shrinker.h \
+    $(wildcard include/config/MEMCG) \
+  include/linux/xarray.h \
+    $(wildcard include/config/XARRAY_MULTI) \
   include/linux/gfp.h \
     $(wildcard include/config/KASAN_HW_TAGS) \
-    $(wildcard include/config/HIGHMEM) \
     $(wildcard include/config/ZONE_DMA) \
     $(wildcard include/config/ZONE_DMA32) \
     $(wildcard include/config/ZONE_DEVICE) \
-    $(wildcard include/config/NUMA) \
     $(wildcard include/config/PM_SLEEP) \
     $(wildcard include/config/CONTIG_ALLOC) \
     $(wildcard include/config/CMA) \
+  include/linux/mmdebug.h \
+    $(wildcard include/config/DEBUG_VM) \
+    $(wildcard include/config/DEBUG_VM_PGFLAGS) \
   include/linux/mmzone.h \
     $(wildcard include/config/FORCE_MAX_ZONEORDER) \
     $(wildcard include/config/MEMORY_ISOLATION) \
@@ -475,7 +584,6 @@ deps_/home/zhf/Projects/srv6_test/srv6_kernel/src/hooks/hook_ipv6_rcv.o := \
     $(wildcard include/config/SWAP) \
     $(wildcard include/config/NUMA_BALANCING) \
     $(wildcard include/config/TRANSPARENT_HUGEPAGE) \
-    $(wildcard include/config/MEMCG) \
     $(wildcard include/config/MEMORY_HOTPLUG) \
     $(wildcard include/config/COMPACTION) \
     $(wildcard include/config/PAGE_EXTENSION) \
@@ -483,23 +591,10 @@ deps_/home/zhf/Projects/srv6_test/srv6_kernel/src/hooks/hook_ipv6_rcv.o := \
     $(wildcard include/config/HAVE_MEMORYLESS_NODES) \
     $(wildcard include/config/SPARSEMEM_EXTREME) \
     $(wildcard include/config/HAVE_ARCH_PFN_VALID) \
-  include/linux/wait.h \
-  include/uapi/linux/wait.h \
-  include/linux/numa.h \
-    $(wildcard include/config/NODES_SHIFT) \
-    $(wildcard include/config/HAVE_ARCH_NODE_DEV_GROUP) \
-  include/linux/seqlock.h \
-  include/linux/mutex.h \
-    $(wildcard include/config/MUTEX_SPIN_ON_OWNER) \
-    $(wildcard include/config/DEBUG_MUTEXES) \
-  include/linux/osq_lock.h \
-  include/linux/debug_locks.h \
-  include/linux/nodemask.h \
   include/linux/pageblock-flags.h \
     $(wildcard include/config/HUGETLB_PAGE) \
     $(wildcard include/config/HUGETLB_PAGE_SIZE_VARIABLE) \
   include/linux/page-flags-layout.h \
-  include/generated/bounds.h \
   include/linux/mm_types.h \
     $(wildcard include/config/HAVE_ALIGNED_STRUCT_PAGE) \
     $(wildcard include/config/USERFAULTFD) \
@@ -521,22 +616,6 @@ deps_/home/zhf/Projects/srv6_test/srv6_kernel/src/hooks/hook_ipv6_rcv.o := \
   include/linux/refcount.h \
   include/linux/rbtree.h \
   include/linux/rbtree_types.h \
-  include/linux/rcupdate.h \
-    $(wildcard include/config/PREEMPT_RCU) \
-    $(wildcard include/config/TINY_RCU) \
-    $(wildcard include/config/RCU_STRICT_GRACE_PERIOD) \
-    $(wildcard include/config/TASKS_RCU_GENERIC) \
-    $(wildcard include/config/RCU_STALL_COMMON) \
-    $(wildcard include/config/NO_HZ_FULL) \
-    $(wildcard include/config/RCU_NOCB_CPU) \
-    $(wildcard include/config/TASKS_RCU) \
-    $(wildcard include/config/TASKS_TRACE_RCU) \
-    $(wildcard include/config/TASKS_RUDE_RCU) \
-    $(wildcard include/config/TREE_RCU) \
-    $(wildcard include/config/DEBUG_OBJECTS_RCU_HEAD) \
-    $(wildcard include/config/PROVE_RCU) \
-    $(wildcard include/config/ARCH_WEAK_RELEASE_ACQUIRE) \
-  include/linux/rcutree.h \
   include/linux/rwsem.h \
     $(wildcard include/config/RWSEM_SPIN_ON_OWNER) \
     $(wildcard include/config/DEBUG_RWSEMS) \
@@ -558,16 +637,6 @@ deps_/home/zhf/Projects/srv6_test/srv6_kernel/src/hooks/hook_ipv6_rcv.o := \
   include/linux/timer.h \
     $(wildcard include/config/DEBUG_OBJECTS_TIMERS) \
   include/linux/ktime.h \
-  include/linux/time.h \
-    $(wildcard include/config/POSIX_TIMERS) \
-  include/linux/time32.h \
-  include/linux/timex.h \
-  include/uapi/linux/timex.h \
-  arch/x86/include/asm/timex.h \
-    $(wildcard include/config/X86_TSC) \
-  arch/x86/include/asm/tsc.h \
-  include/vdso/time32.h \
-  include/vdso/time.h \
   include/linux/jiffies.h \
   include/vdso/jiffies.h \
   include/generated/timeconst.h \
@@ -606,6 +675,9 @@ deps_/home/zhf/Projects/srv6_test/srv6_kernel/src/hooks/hook_ipv6_rcv.o := \
   include/linux/arch_topology.h \
     $(wildcard include/config/ACPI_CPPC_LIB) \
     $(wildcard include/config/GENERIC_ARCH_TOPOLOGY) \
+  include/linux/percpu.h \
+    $(wildcard include/config/NEED_PER_CPU_EMBED_FIRST_CHUNK) \
+    $(wildcard include/config/NEED_PER_CPU_PAGE_FIRST_CHUNK) \
   arch/x86/include/asm/topology.h \
     $(wildcard include/config/SCHED_MC_PRIO) \
   arch/x86/include/asm/mpspec.h \
@@ -615,56 +687,37 @@ deps_/home/zhf/Projects/srv6_test/srv6_kernel/src/hooks/hook_ipv6_rcv.o := \
   arch/x86/include/asm/x86_init.h \
   arch/x86/include/asm/apicdef.h \
   include/asm-generic/topology.h \
-  include/linux/netdevice.h \
-    $(wildcard include/config/DCB) \
-    $(wildcard include/config/HYPERV_NET) \
-    $(wildcard include/config/WLAN) \
-    $(wildcard include/config/AX25) \
-    $(wildcard include/config/MAC80211_MESH) \
-    $(wildcard include/config/NET_IPIP) \
-    $(wildcard include/config/NET_IPGRE) \
-    $(wildcard include/config/IPV6_SIT) \
-    $(wildcard include/config/IPV6_TUNNEL) \
-    $(wildcard include/config/RPS) \
-    $(wildcard include/config/NETPOLL) \
-    $(wildcard include/config/XPS) \
-    $(wildcard include/config/XDP_SOCKETS) \
-    $(wildcard include/config/BQL) \
-    $(wildcard include/config/SYSCTL) \
-    $(wildcard include/config/RFS_ACCEL) \
-    $(wildcard include/config/FCOE) \
-    $(wildcard include/config/XFRM_OFFLOAD) \
-    $(wildcard include/config/NET_POLL_CONTROLLER) \
-    $(wildcard include/config/LIBFCOE) \
-    $(wildcard include/config/WIRELESS_EXT) \
-    $(wildcard include/config/NET_L3_MASTER_DEV) \
-    $(wildcard include/config/IPV6) \
-    $(wildcard include/config/TLS_DEVICE) \
-    $(wildcard include/config/VLAN_8021Q) \
-    $(wildcard include/config/NET_DSA) \
-    $(wildcard include/config/TIPC) \
-    $(wildcard include/config/ATALK) \
-    $(wildcard include/config/DECNET) \
-    $(wildcard include/config/CFG80211) \
-    $(wildcard include/config/IEEE802154) \
-    $(wildcard include/config/6LOWPAN) \
-    $(wildcard include/config/MPLS_ROUTING) \
-    $(wildcard include/config/MCTP) \
-    $(wildcard include/config/NET_CLS_ACT) \
-    $(wildcard include/config/NETFILTER_INGRESS) \
-    $(wildcard include/config/NETFILTER_EGRESS) \
-    $(wildcard include/config/NET_SCHED) \
-    $(wildcard include/config/PCPU_DEV_REFCNT) \
-    $(wildcard include/config/GARP) \
-    $(wildcard include/config/MRP) \
-    $(wildcard include/config/NET_DROP_MONITOR) \
-    $(wildcard include/config/CGROUP_NET_PRIO) \
-    $(wildcard include/config/MACSEC) \
-    $(wildcard include/config/NET_FLOW_LIMIT) \
-    $(wildcard include/config/NET_EGRESS) \
-    $(wildcard include/config/NET_DEV_REFCNT_TRACKER) \
-    $(wildcard include/config/ETHTOOL_NETLINK) \
-  include/linux/delay.h \
+  include/linux/kconfig.h \
+  include/linux/radix-tree.h \
+  include/linux/pid.h \
+  include/linux/capability.h \
+  include/uapi/linux/capability.h \
+  include/linux/semaphore.h \
+  include/linux/fcntl.h \
+    $(wildcard include/config/ARCH_32BIT_OFF_T) \
+  include/uapi/linux/fcntl.h \
+  arch/x86/include/generated/uapi/asm/fcntl.h \
+  include/uapi/asm-generic/fcntl.h \
+  include/uapi/linux/openat2.h \
+  include/linux/migrate_mode.h \
+  include/linux/percpu-rwsem.h \
+  include/linux/rcuwait.h \
+  include/linux/sched/signal.h \
+    $(wildcard include/config/SCHED_AUTOGROUP) \
+    $(wildcard include/config/BSD_PROCESS_ACCT) \
+    $(wildcard include/config/TASKSTATS) \
+    $(wildcard include/config/AUDIT) \
+    $(wildcard include/config/STACK_GROWSUP) \
+  include/linux/signal.h \
+    $(wildcard include/config/DYNAMIC_SIGFRAME) \
+  include/linux/signal_types.h \
+    $(wildcard include/config/OLD_SIGACTION) \
+  include/uapi/linux/signal.h \
+  arch/x86/include/asm/signal.h \
+  arch/x86/include/uapi/asm/signal.h \
+  include/uapi/asm-generic/signal-defs.h \
+  arch/x86/include/uapi/asm/siginfo.h \
+  include/uapi/asm-generic/siginfo.h \
   include/linux/sched.h \
     $(wildcard include/config/VIRT_CPU_ACCOUNTING_NATIVE) \
     $(wildcard include/config/SCHED_INFO) \
@@ -693,7 +746,6 @@ deps_/home/zhf/Projects/srv6_test/srv6_kernel/src/hooks/hook_ipv6_rcv.o := \
     $(wildcard include/config/SYSVIPC) \
     $(wildcard include/config/DETECT_HUNG_TASK) \
     $(wildcard include/config/IO_URING) \
-    $(wildcard include/config/AUDIT) \
     $(wildcard include/config/AUDITSYSCALL) \
     $(wildcard include/config/UBSAN) \
     $(wildcard include/config/UBSAN_TRAP) \
@@ -711,7 +763,6 @@ deps_/home/zhf/Projects/srv6_test/srv6_kernel/src/hooks/hook_ipv6_rcv.o := \
     $(wildcard include/config/BCACHE) \
     $(wildcard include/config/VMAP_STACK) \
     $(wildcard include/config/LIVEPATCH) \
-    $(wildcard include/config/SECURITY) \
     $(wildcard include/config/BPF_SYSCALL) \
     $(wildcard include/config/GCC_PLUGIN_STACKLEAK) \
     $(wildcard include/config/X86_MCE) \
@@ -723,16 +774,9 @@ deps_/home/zhf/Projects/srv6_test/srv6_kernel/src/hooks/hook_ipv6_rcv.o := \
     $(wildcard include/config/PREEMPT_VOLUNTARY) \
     $(wildcard include/config/DEBUG_RSEQ) \
   include/uapi/linux/sched.h \
-  include/linux/pid.h \
-  include/linux/rculist.h \
-    $(wildcard include/config/PROVE_RCU_LIST) \
   include/linux/sem.h \
   include/uapi/linux/sem.h \
   include/linux/ipc.h \
-  include/linux/uidgid.h \
-    $(wildcard include/config/MULTIUSER) \
-    $(wildcard include/config/USER_NS) \
-  include/linux/highuid.h \
   include/linux/rhashtable-types.h \
   include/uapi/linux/ipc.h \
   arch/x86/include/generated/uapi/asm/ipcbuf.h \
@@ -776,14 +820,6 @@ deps_/home/zhf/Projects/srv6_test/srv6_kernel/src/hooks/hook_ipv6_rcv.o := \
   include/linux/latencytop.h \
   include/linux/sched/prio.h \
   include/linux/sched/types.h \
-  include/linux/signal_types.h \
-    $(wildcard include/config/OLD_SIGACTION) \
-  include/uapi/linux/signal.h \
-  arch/x86/include/asm/signal.h \
-  arch/x86/include/uapi/asm/signal.h \
-  include/uapi/asm-generic/signal-defs.h \
-  arch/x86/include/uapi/asm/siginfo.h \
-  include/uapi/asm-generic/siginfo.h \
   include/linux/syscall_user_dispatch.h \
   include/linux/task_io_accounting.h \
     $(wildcard include/config/TASK_IO_ACCOUNTING) \
@@ -795,190 +831,6 @@ deps_/home/zhf/Projects/srv6_test/srv6_kernel/src/hooks/hook_ipv6_rcv.o := \
   arch/x86/include/generated/asm/kmap_size.h \
   include/asm-generic/kmap_size.h \
     $(wildcard include/config/DEBUG_KMAP_LOCAL) \
-  arch/x86/include/asm/delay.h \
-  include/asm-generic/delay.h \
-  include/linux/prefetch.h \
-  arch/x86/include/asm/local.h \
-  include/linux/dynamic_queue_limits.h \
-  include/net/net_namespace.h \
-    $(wildcard include/config/NF_CONNTRACK) \
-    $(wildcard include/config/IEEE802154_6LOWPAN) \
-    $(wildcard include/config/IP_SCTP) \
-    $(wildcard include/config/NETFILTER) \
-    $(wildcard include/config/NF_TABLES) \
-    $(wildcard include/config/WEXT_CORE) \
-    $(wildcard include/config/IP_VS) \
-    $(wildcard include/config/MPLS) \
-    $(wildcard include/config/CAN) \
-    $(wildcard include/config/CRYPTO_USER) \
-    $(wildcard include/config/SMC) \
-    $(wildcard include/config/NET_NS) \
-    $(wildcard include/config/NET_NS_REFCNT_TRACKER) \
-    $(wildcard include/config/NET) \
-  include/linux/sysctl.h \
-  include/uapi/linux/sysctl.h \
-  include/net/flow.h \
-  include/linux/socket.h \
-  arch/x86/include/generated/uapi/asm/socket.h \
-  include/uapi/asm-generic/socket.h \
-  arch/x86/include/generated/uapi/asm/sockios.h \
-  include/uapi/asm-generic/sockios.h \
-  include/uapi/linux/sockios.h \
-  include/linux/uio.h \
-    $(wildcard include/config/ARCH_HAS_COPY_MC) \
-  include/uapi/linux/uio.h \
-  include/uapi/linux/socket.h \
-  include/linux/in6.h \
-  include/uapi/linux/in6.h \
-  include/uapi/linux/libc-compat.h \
-  include/net/flow_dissector.h \
-  include/linux/siphash.h \
-    $(wildcard include/config/HAVE_EFFICIENT_UNALIGNED_ACCESS) \
-  include/uapi/linux/if_ether.h \
-  include/net/netns/core.h \
-  include/net/netns/mib.h \
-    $(wildcard include/config/XFRM_STATISTICS) \
-    $(wildcard include/config/TLS) \
-    $(wildcard include/config/MPTCP) \
-  include/net/snmp.h \
-  include/uapi/linux/snmp.h \
-  include/linux/u64_stats_sync.h \
-  arch/x86/include/generated/asm/local64.h \
-  include/asm-generic/local64.h \
-  include/net/netns/unix.h \
-  include/net/netns/packet.h \
-  include/net/netns/ipv4.h \
-    $(wildcard include/config/IP_MULTIPLE_TABLES) \
-    $(wildcard include/config/IP_MROUTE) \
-    $(wildcard include/config/IP_MROUTE_MULTIPLE_TABLES) \
-    $(wildcard include/config/IP_ROUTE_MULTIPATH) \
-  include/net/inet_frag.h \
-  include/net/netns/ipv6.h \
-    $(wildcard include/config/IPV6_MULTIPLE_TABLES) \
-    $(wildcard include/config/IPV6_SUBTREES) \
-    $(wildcard include/config/IPV6_MROUTE) \
-    $(wildcard include/config/IPV6_MROUTE_MULTIPLE_TABLES) \
-    $(wildcard include/config/NF_DEFRAG_IPV6) \
-  include/uapi/linux/icmpv6.h \
-  include/net/netns/nexthop.h \
-  include/net/netns/ieee802154_6lowpan.h \
-  include/net/netns/sctp.h \
-  include/net/netns/netfilter.h \
-    $(wildcard include/config/NETFILTER_FAMILY_ARP) \
-    $(wildcard include/config/NETFILTER_FAMILY_BRIDGE) \
-    $(wildcard include/config/NF_DEFRAG_IPV4) \
-  include/linux/netfilter_defs.h \
-  include/uapi/linux/netfilter.h \
-  include/linux/in.h \
-  include/uapi/linux/in.h \
-  include/net/netns/conntrack.h \
-    $(wildcard include/config/NF_CT_PROTO_DCCP) \
-    $(wildcard include/config/NF_CT_PROTO_SCTP) \
-    $(wildcard include/config/NF_FLOW_TABLE) \
-    $(wildcard include/config/NF_CT_PROTO_GRE) \
-    $(wildcard include/config/NF_CONNTRACK_EVENTS) \
-    $(wildcard include/config/NF_CONNTRACK_LABELS) \
-  include/linux/list_nulls.h \
-  include/linux/netfilter/nf_conntrack_tcp.h \
-  include/uapi/linux/netfilter/nf_conntrack_tcp.h \
-  include/linux/netfilter/nf_conntrack_dccp.h \
-  include/uapi/linux/netfilter/nf_conntrack_tuple_common.h \
-  include/linux/netfilter/nf_conntrack_common.h \
-  include/uapi/linux/netfilter/nf_conntrack_common.h \
-  include/linux/netfilter/nf_conntrack_sctp.h \
-  include/uapi/linux/netfilter/nf_conntrack_sctp.h \
-  include/net/netns/nftables.h \
-  include/net/netns/xfrm.h \
-  include/uapi/linux/xfrm.h \
-  include/net/netns/mpls.h \
-  include/net/netns/can.h \
-  include/net/netns/xdp.h \
-  include/net/netns/smc.h \
-  include/net/netns/bpf.h \
-  include/net/netns/mctp.h \
-  include/net/net_trackers.h \
-  include/linux/ref_tracker.h \
-    $(wildcard include/config/REF_TRACKER) \
-  include/linux/stackdepot.h \
-    $(wildcard include/config/STACKDEPOT) \
-  include/linux/ns_common.h \
-  include/linux/idr.h \
-  include/linux/radix-tree.h \
-  include/linux/xarray.h \
-    $(wildcard include/config/XARRAY_MULTI) \
-  include/linux/kconfig.h \
-  include/linux/skbuff.h \
-    $(wildcard include/config/BRIDGE_NETFILTER) \
-    $(wildcard include/config/NET_TC_SKB_EXT) \
-    $(wildcard include/config/NET_SOCK_MSG) \
-    $(wildcard include/config/SKB_EXTENSIONS) \
-    $(wildcard include/config/IPV6_NDISC_NODETYPE) \
-    $(wildcard include/config/NET_SWITCHDEV) \
-    $(wildcard include/config/NET_REDIRECT) \
-    $(wildcard include/config/NETFILTER_SKIP_EGRESS) \
-    $(wildcard include/config/NET_RX_BUSY_POLL) \
-    $(wildcard include/config/NETWORK_SECMARK) \
-    $(wildcard include/config/DEBUG_NET) \
-    $(wildcard include/config/PAGE_POOL) \
-    $(wildcard include/config/NETWORK_PHY_TIMESTAMPING) \
-    $(wildcard include/config/MCTP_FLOWS) \
-    $(wildcard include/config/NETFILTER_XT_TARGET_TRACE) \
-  include/linux/bvec.h \
-  include/linux/highmem.h \
-  include/linux/fs.h \
-    $(wildcard include/config/READ_ONLY_THP_FOR_FS) \
-    $(wildcard include/config/FS_POSIX_ACL) \
-    $(wildcard include/config/CGROUP_WRITEBACK) \
-    $(wildcard include/config/IMA) \
-    $(wildcard include/config/FILE_LOCKING) \
-    $(wildcard include/config/FSNOTIFY) \
-    $(wildcard include/config/FS_ENCRYPTION) \
-    $(wildcard include/config/FS_VERITY) \
-    $(wildcard include/config/EPOLL) \
-    $(wildcard include/config/UNICODE) \
-    $(wildcard include/config/QUOTA) \
-    $(wildcard include/config/FS_DAX) \
-    $(wildcard include/config/BLOCK) \
-    $(wildcard include/config/MIGRATION) \
-  include/linux/wait_bit.h \
-  include/linux/kdev_t.h \
-  include/uapi/linux/kdev_t.h \
-  include/linux/dcache.h \
-  include/linux/rculist_bl.h \
-  include/linux/list_bl.h \
-  include/linux/bit_spinlock.h \
-  include/linux/lockref.h \
-    $(wildcard include/config/ARCH_USE_CMPXCHG_LOCKREF) \
-  include/linux/stringhash.h \
-    $(wildcard include/config/DCACHE_WORD_ACCESS) \
-  include/linux/hash.h \
-    $(wildcard include/config/HAVE_ARCH_HASH) \
-  include/linux/path.h \
-  include/linux/stat.h \
-  arch/x86/include/uapi/asm/stat.h \
-  include/uapi/linux/stat.h \
-  include/linux/list_lru.h \
-    $(wildcard include/config/MEMCG_KMEM) \
-  include/linux/shrinker.h \
-  include/linux/capability.h \
-  include/uapi/linux/capability.h \
-  include/linux/semaphore.h \
-  include/linux/fcntl.h \
-    $(wildcard include/config/ARCH_32BIT_OFF_T) \
-  include/uapi/linux/fcntl.h \
-  arch/x86/include/generated/uapi/asm/fcntl.h \
-  include/uapi/asm-generic/fcntl.h \
-  include/uapi/linux/openat2.h \
-  include/linux/migrate_mode.h \
-  include/linux/percpu-rwsem.h \
-  include/linux/rcuwait.h \
-  include/linux/sched/signal.h \
-    $(wildcard include/config/SCHED_AUTOGROUP) \
-    $(wildcard include/config/BSD_PROCESS_ACCT) \
-    $(wildcard include/config/TASKSTATS) \
-    $(wildcard include/config/STACK_GROWSUP) \
-  include/linux/signal.h \
-    $(wildcard include/config/DYNAMIC_SIGFRAME) \
   include/linux/sched/jobctl.h \
   include/linux/sched/task.h \
     $(wildcard include/config/HAVE_EXIT_THREAD) \
@@ -991,6 +843,7 @@ deps_/home/zhf/Projects/srv6_test/srv6_kernel/src/hooks/hook_ipv6_rcv.o := \
   arch/x86/include/asm/uaccess.h \
     $(wildcard include/config/CC_HAS_ASM_GOTO_OUTPUT) \
     $(wildcard include/config/CC_HAS_ASM_GOTO_TIED_OUTPUT) \
+    $(wildcard include/config/ARCH_HAS_COPY_MC) \
     $(wildcard include/config/X86_INTEL_USERCOPY) \
   arch/x86/include/asm/smap.h \
   arch/x86/include/asm/extable.h \
@@ -1002,10 +855,14 @@ deps_/home/zhf/Projects/srv6_test/srv6_kernel/src/hooks/hook_ipv6_rcv.o := \
     $(wildcard include/config/DEBUG_CREDENTIALS) \
   include/linux/key.h \
     $(wildcard include/config/KEY_NOTIFICATIONS) \
+    $(wildcard include/config/NET) \
+  include/linux/sysctl.h \
+  include/uapi/linux/sysctl.h \
   include/linux/assoc_array.h \
     $(wildcard include/config/ASSOCIATIVE_ARRAY) \
   include/linux/sched/user.h \
     $(wildcard include/config/WATCH_QUEUE) \
+  include/linux/percpu_counter.h \
   include/linux/ratelimit.h \
   include/linux/rcu_sync.h \
   include/linux/delayed_call.h \
@@ -1074,6 +931,8 @@ deps_/home/zhf/Projects/srv6_test/srv6_kernel/src/hooks/hook_ipv6_rcv.o := \
     $(wildcard include/config/ARCH_STACKWALK) \
     $(wildcard include/config/STACKTRACE) \
     $(wildcard include/config/HAVE_RELIABLE_STACKTRACE) \
+  include/linux/stackdepot.h \
+    $(wildcard include/config/STACKDEPOT) \
   include/linux/page_ref.h \
     $(wildcard include/config/DEBUG_PAGE_REF) \
   include/linux/sizes.h \
@@ -1134,6 +993,15 @@ deps_/home/zhf/Projects/srv6_test/srv6_kernel/src/hooks/hook_ipv6_rcv.o := \
     $(wildcard include/config/X86_HV_CALLBACK_VECTOR) \
     $(wildcard include/config/HYPERV) \
   include/linux/highmem-internal.h \
+  include/linux/socket.h \
+  arch/x86/include/generated/uapi/asm/socket.h \
+  include/uapi/asm-generic/socket.h \
+  arch/x86/include/generated/uapi/asm/sockios.h \
+  include/uapi/asm-generic/sockios.h \
+  include/uapi/linux/sockios.h \
+  include/linux/uio.h \
+  include/uapi/linux/uio.h \
+  include/uapi/linux/socket.h \
   include/linux/net.h \
   include/linux/random.h \
     $(wildcard include/config/VMGENID) \
@@ -1178,6 +1046,7 @@ deps_/home/zhf/Projects/srv6_test/srv6_kernel/src/hooks/hook_ipv6_rcv.o := \
   include/linux/sysfs.h \
   include/linux/kernfs.h \
     $(wildcard include/config/KERNFS) \
+  include/linux/idr.h \
   include/linux/kobject_ns.h \
   include/linux/sched/cpufreq.h \
     $(wildcard include/config/CPU_FREQ) \
@@ -1278,13 +1147,149 @@ deps_/home/zhf/Projects/srv6_test/srv6_kernel/src/hooks/hook_ipv6_rcv.o := \
   include/linux/netdev_features.h \
   include/linux/sched/clock.h \
     $(wildcard include/config/HAVE_UNSTABLE_SCHED_CLOCK) \
+  include/net/flow_dissector.h \
+  include/linux/in6.h \
+  include/uapi/linux/in6.h \
+  include/uapi/linux/libc-compat.h \
+  include/linux/siphash.h \
+  include/uapi/linux/if_ether.h \
   include/linux/splice.h \
   include/linux/pipe_fs_i.h \
   include/uapi/linux/if_packet.h \
+  include/net/flow.h \
   include/net/page_pool.h \
     $(wildcard include/config/PAGE_POOL_STATS) \
   include/linux/ptr_ring.h \
+  include/linux/netfilter/nf_conntrack_common.h \
+  include/uapi/linux/netfilter/nf_conntrack_common.h \
   include/net/net_debug.h \
+  include/uapi/linux/ip.h \
+  include/linux/in.h \
+  include/uapi/linux/in.h \
+  include/linux/jhash.h \
+  include/linux/unaligned/packed_struct.h \
+  include/net/inet_sock.h \
+  include/linux/netdevice.h \
+    $(wildcard include/config/DCB) \
+    $(wildcard include/config/HYPERV_NET) \
+    $(wildcard include/config/WLAN) \
+    $(wildcard include/config/AX25) \
+    $(wildcard include/config/MAC80211_MESH) \
+    $(wildcard include/config/NET_IPIP) \
+    $(wildcard include/config/NET_IPGRE) \
+    $(wildcard include/config/IPV6_SIT) \
+    $(wildcard include/config/IPV6_TUNNEL) \
+    $(wildcard include/config/RPS) \
+    $(wildcard include/config/NETPOLL) \
+    $(wildcard include/config/XDP_SOCKETS) \
+    $(wildcard include/config/BQL) \
+    $(wildcard include/config/RFS_ACCEL) \
+    $(wildcard include/config/FCOE) \
+    $(wildcard include/config/XFRM_OFFLOAD) \
+    $(wildcard include/config/NET_POLL_CONTROLLER) \
+    $(wildcard include/config/LIBFCOE) \
+    $(wildcard include/config/WIRELESS_EXT) \
+    $(wildcard include/config/VLAN_8021Q) \
+    $(wildcard include/config/NET_DSA) \
+    $(wildcard include/config/TIPC) \
+    $(wildcard include/config/ATALK) \
+    $(wildcard include/config/DECNET) \
+    $(wildcard include/config/CFG80211) \
+    $(wildcard include/config/IEEE802154) \
+    $(wildcard include/config/6LOWPAN) \
+    $(wildcard include/config/MPLS_ROUTING) \
+    $(wildcard include/config/MCTP) \
+    $(wildcard include/config/NETFILTER_INGRESS) \
+    $(wildcard include/config/NETFILTER_EGRESS) \
+    $(wildcard include/config/PCPU_DEV_REFCNT) \
+    $(wildcard include/config/GARP) \
+    $(wildcard include/config/MRP) \
+    $(wildcard include/config/NET_DROP_MONITOR) \
+    $(wildcard include/config/CGROUP_NET_PRIO) \
+    $(wildcard include/config/MACSEC) \
+    $(wildcard include/config/NET_FLOW_LIMIT) \
+    $(wildcard include/config/NET_EGRESS) \
+    $(wildcard include/config/NET_DEV_REFCNT_TRACKER) \
+    $(wildcard include/config/ETHTOOL_NETLINK) \
+  include/linux/delay.h \
+  arch/x86/include/asm/delay.h \
+  include/asm-generic/delay.h \
+  include/linux/prefetch.h \
+  arch/x86/include/asm/local.h \
+  include/linux/dynamic_queue_limits.h \
+  include/net/net_namespace.h \
+    $(wildcard include/config/IEEE802154_6LOWPAN) \
+    $(wildcard include/config/IP_SCTP) \
+    $(wildcard include/config/NETFILTER) \
+    $(wildcard include/config/WEXT_CORE) \
+    $(wildcard include/config/MPLS) \
+    $(wildcard include/config/CAN) \
+    $(wildcard include/config/CRYPTO_USER) \
+    $(wildcard include/config/SMC) \
+    $(wildcard include/config/NET_NS) \
+    $(wildcard include/config/NET_NS_REFCNT_TRACKER) \
+  include/net/netns/core.h \
+  include/net/netns/mib.h \
+    $(wildcard include/config/XFRM_STATISTICS) \
+    $(wildcard include/config/TLS) \
+  include/net/snmp.h \
+  include/uapi/linux/snmp.h \
+  include/linux/u64_stats_sync.h \
+  arch/x86/include/generated/asm/local64.h \
+  include/asm-generic/local64.h \
+  include/net/netns/unix.h \
+  include/net/netns/packet.h \
+  include/net/netns/ipv4.h \
+    $(wildcard include/config/IP_MULTIPLE_TABLES) \
+    $(wildcard include/config/IP_ROUTE_CLASSID) \
+    $(wildcard include/config/IP_MROUTE) \
+    $(wildcard include/config/IP_MROUTE_MULTIPLE_TABLES) \
+    $(wildcard include/config/IP_ROUTE_MULTIPATH) \
+  include/net/inet_frag.h \
+  include/net/netns/ipv6.h \
+    $(wildcard include/config/IPV6_MULTIPLE_TABLES) \
+    $(wildcard include/config/IPV6_SUBTREES) \
+    $(wildcard include/config/IPV6_MROUTE) \
+    $(wildcard include/config/IPV6_MROUTE_MULTIPLE_TABLES) \
+    $(wildcard include/config/NF_DEFRAG_IPV6) \
+  include/net/dst_ops.h \
+  include/uapi/linux/icmpv6.h \
+  include/net/netns/nexthop.h \
+  include/net/netns/ieee802154_6lowpan.h \
+  include/net/netns/sctp.h \
+  include/net/netns/netfilter.h \
+    $(wildcard include/config/NETFILTER_FAMILY_ARP) \
+    $(wildcard include/config/NETFILTER_FAMILY_BRIDGE) \
+    $(wildcard include/config/NF_DEFRAG_IPV4) \
+  include/linux/netfilter_defs.h \
+  include/uapi/linux/netfilter.h \
+  include/net/netns/conntrack.h \
+    $(wildcard include/config/NF_CT_PROTO_DCCP) \
+    $(wildcard include/config/NF_CT_PROTO_SCTP) \
+    $(wildcard include/config/NF_FLOW_TABLE) \
+    $(wildcard include/config/NF_CT_PROTO_GRE) \
+    $(wildcard include/config/NF_CONNTRACK_EVENTS) \
+    $(wildcard include/config/NF_CONNTRACK_LABELS) \
+  include/linux/list_nulls.h \
+  include/linux/netfilter/nf_conntrack_tcp.h \
+  include/uapi/linux/netfilter/nf_conntrack_tcp.h \
+  include/linux/netfilter/nf_conntrack_dccp.h \
+  include/uapi/linux/netfilter/nf_conntrack_tuple_common.h \
+  include/linux/netfilter/nf_conntrack_sctp.h \
+  include/uapi/linux/netfilter/nf_conntrack_sctp.h \
+  include/net/netns/nftables.h \
+  include/net/netns/xfrm.h \
+  include/uapi/linux/xfrm.h \
+  include/net/netns/mpls.h \
+  include/net/netns/can.h \
+  include/net/netns/xdp.h \
+  include/net/netns/smc.h \
+  include/net/netns/bpf.h \
+  include/net/netns/mctp.h \
+  include/net/net_trackers.h \
+  include/linux/ref_tracker.h \
+    $(wildcard include/config/REF_TRACKER) \
+  include/linux/ns_common.h \
   include/linux/seq_file_net.h \
   include/linux/seq_file.h \
   include/linux/string_helpers.h \
@@ -1353,28 +1358,6 @@ deps_/home/zhf/Projects/srv6_test/srv6_kernel/src/hooks/hook_ipv6_rcv.o := \
   include/uapi/linux/pkt_cls.h \
   include/uapi/linux/pkt_sched.h \
   include/linux/hashtable.h \
-  include/linux/rtnetlink.h \
-    $(wildcard include/config/NET_INGRESS) \
-  include/uapi/linux/rtnetlink.h \
-  include/uapi/linux/if_addr.h \
-  include/net/neighbour.h \
-  include/net/rtnetlink.h \
-  include/net/netlink.h \
-  include/linux/indirect_call_wrapper.h \
-    $(wildcard include/config/INET) \
-  include/net/inetpeer.h \
-  include/net/ipv6.h \
-  include/linux/ipv6.h \
-    $(wildcard include/config/IPV6_ROUTER_PREF) \
-    $(wildcard include/config/IPV6_ROUTE_INFO) \
-    $(wildcard include/config/IPV6_OPTIMISTIC_DAD) \
-    $(wildcard include/config/IPV6_SEG6_HMAC) \
-    $(wildcard include/config/IPV6_MIP6) \
-  include/uapi/linux/ipv6.h \
-  include/linux/tcp.h \
-    $(wildcard include/config/BPF) \
-    $(wildcard include/config/TCP_MD5SIG) \
-  include/linux/win_minmax.h \
   include/net/sock.h \
     $(wildcard include/config/SOCK_RX_QUEUE_MAPPING) \
     $(wildcard include/config/SOCK_VALIDATE_XMIT) \
@@ -1399,18 +1382,38 @@ deps_/home/zhf/Projects/srv6_test/srv6_kernel/src/hooks/hook_ipv6_rcv.o := \
   arch/x86/include/generated/uapi/asm/poll.h \
   include/uapi/asm-generic/poll.h \
   include/uapi/linux/eventpoll.h \
+  include/linux/indirect_call_wrapper.h \
+  include/net/dst.h \
+  include/linux/rtnetlink.h \
+    $(wildcard include/config/NET_INGRESS) \
+  include/uapi/linux/rtnetlink.h \
+  include/uapi/linux/if_addr.h \
+  include/net/neighbour.h \
+  include/net/rtnetlink.h \
+  include/net/netlink.h \
   include/net/tcp_states.h \
   include/uapi/linux/net_tstamp.h \
   include/net/l3mdev.h \
   include/net/fib_rules.h \
   include/uapi/linux/fib_rules.h \
   include/net/fib_notifier.h \
-  include/net/inet_connection_sock.h \
-  include/net/inet_sock.h \
-  include/linux/jhash.h \
-  include/linux/unaligned/packed_struct.h \
   include/net/request_sock.h \
   include/net/netns/hash.h \
+  include/net/route.h \
+  include/net/inetpeer.h \
+  include/net/ipv6.h \
+  include/linux/ipv6.h \
+    $(wildcard include/config/IPV6_ROUTER_PREF) \
+    $(wildcard include/config/IPV6_ROUTE_INFO) \
+    $(wildcard include/config/IPV6_OPTIMISTIC_DAD) \
+    $(wildcard include/config/IPV6_SEG6_HMAC) \
+    $(wildcard include/config/IPV6_MIP6) \
+  include/uapi/linux/ipv6.h \
+  include/linux/tcp.h \
+    $(wildcard include/config/BPF) \
+    $(wildcard include/config/TCP_MD5SIG) \
+  include/linux/win_minmax.h \
+  include/net/inet_connection_sock.h \
   include/net/inet_timewait_sock.h \
   include/net/timewait_sock.h \
   include/uapi/linux/tcp.h \
@@ -1430,103 +1433,16 @@ deps_/home/zhf/Projects/srv6_test/srv6_kernel/src/hooks/hook_ipv6_rcv.o := \
     $(wildcard include/config/NF_NAT) \
   include/uapi/linux/in_route.h \
   include/uapi/linux/route.h \
-  include/linux/ip.h \
-  include/uapi/linux/ip.h \
-  /home/zhf/Projects/srv6_test/srv6_kernel/headers/hooks/hook_ipv6_rcv.h \
-  /home/zhf/Projects/srv6_test/srv6_kernel/headers/api/ftrace_hook_api.h \
-  include/linux/dirent.h \
-  include/linux/ftrace.h \
-    $(wildcard include/config/FUNCTION_TRACER) \
-    $(wildcard include/config/DYNAMIC_FTRACE) \
-    $(wildcard include/config/HAVE_DYNAMIC_FTRACE_WITH_ARGS) \
-    $(wildcard include/config/DYNAMIC_FTRACE_WITH_REGS) \
-    $(wildcard include/config/DYNAMIC_FTRACE_WITH_DIRECT_CALLS) \
-    $(wildcard include/config/HAVE_DYNAMIC_FTRACE_WITH_DIRECT_CALLS) \
-    $(wildcard include/config/STACK_TRACER) \
-    $(wildcard include/config/FUNCTION_PROFILER) \
-    $(wildcard include/config/FTRACE_SYSCALLS) \
-  include/linux/trace_recursion.h \
-    $(wildcard include/config/FTRACE_RECORD_RECURSION) \
-  include/linux/trace_clock.h \
-  arch/x86/include/asm/trace_clock.h \
-  include/linux/kallsyms.h \
-    $(wildcard include/config/KALLSYMS_ALL) \
-  include/linux/ptrace.h \
-  include/linux/pid_namespace.h \
-    $(wildcard include/config/PID_NS) \
-  include/uapi/linux/ptrace.h \
-  arch/x86/include/asm/ftrace.h \
-    $(wildcard include/config/HAVE_FENTRY) \
-  include/linux/compat.h \
-    $(wildcard include/config/ARCH_HAS_SYSCALL_WRAPPER) \
-    $(wildcard include/config/COMPAT_OLD_SIGACTION) \
-    $(wildcard include/config/ODD_RT_SIGACTION) \
-  include/uapi/linux/aio_abi.h \
-  arch/x86/include/asm/compat.h \
-  include/linux/sched/task_stack.h \
-    $(wildcard include/config/DEBUG_STACK_USAGE) \
-  include/uapi/linux/magic.h \
-  arch/x86/include/asm/user32.h \
-  include/asm-generic/compat.h \
-    $(wildcard include/config/COMPAT_FOR_U64_ALIGNMENT) \
-  arch/x86/include/asm/syscall_wrapper.h \
-  include/linux/syscalls.h \
-    $(wildcard include/config/CLONE_BACKWARDS) \
-    $(wildcard include/config/CLONE_BACKWARDS3) \
-    $(wildcard include/config/OLD_SIGSUSPEND) \
-    $(wildcard include/config/OLD_SIGSUSPEND3) \
-    $(wildcard include/config/ADVISE_SYSCALLS) \
-  include/trace/syscall.h \
-    $(wildcard include/config/HAVE_SYSCALL_TRACEPOINTS) \
-  include/linux/tracepoint.h \
-    $(wildcard include/config/TRACEPOINT) \
-  include/linux/static_call.h \
-  include/linux/cpu.h \
-    $(wildcard include/config/PM_SLEEP_SMP) \
-    $(wildcard include/config/PM_SLEEP_SMP_NONZERO_CPU) \
-    $(wildcard include/config/HOTPLUG_SMT) \
-  include/linux/node.h \
-    $(wildcard include/config/HMEM_REPORTING) \
-  include/linux/cpuhotplug.h \
-  arch/x86/include/asm/static_call.h \
-  arch/x86/include/asm/text-patching.h \
-    $(wildcard include/config/UML_X86) \
-  include/linux/trace_events.h \
-    $(wildcard include/config/DYNAMIC_EVENTS) \
-    $(wildcard include/config/KPROBE_EVENTS) \
-    $(wildcard include/config/UPROBE_EVENTS) \
-  include/linux/ring_buffer.h \
-    $(wildcard include/config/RING_BUFFER_ALLOW_SWAP) \
-    $(wildcard include/config/RING_BUFFER) \
-  include/linux/trace_seq.h \
-  include/linux/seq_buf.h \
-  include/linux/perf_event.h \
-    $(wildcard include/config/HAVE_HW_BREAKPOINT) \
-    $(wildcard include/config/GUEST_PERF_EVENTS) \
-  include/uapi/linux/perf_event.h \
-  include/uapi/linux/bpf_perf_event.h \
-  arch/x86/include/generated/uapi/asm/bpf_perf_event.h \
-  include/uapi/asm-generic/bpf_perf_event.h \
-  arch/x86/include/asm/perf_event.h \
-    $(wildcard include/config/PERF_EVENTS_AMD_BRS) \
-  arch/x86/include/asm/stacktrace.h \
-  arch/x86/include/asm/cpu_entry_area.h \
-  arch/x86/include/asm/intel_ds.h \
-  arch/x86/include/asm/switch_to.h \
-  arch/x86/include/asm/hw_breakpoint.h \
-  arch/x86/include/uapi/asm/hw_breakpoint.h \
-  include/linux/kdebug.h \
-  arch/x86/include/asm/kdebug.h \
-  include/linux/irq_work.h \
-    $(wildcard include/config/IRQ_WORK) \
-  arch/x86/include/asm/irq_work.h \
-  include/linux/perf_regs.h \
-    $(wildcard include/config/HAVE_PERF_REGS) \
-  arch/x86/include/uapi/asm/perf_regs.h \
-  include/generated/uapi/linux/version.h \
+  include/net/lwtunnel.h \
+    $(wildcard include/config/LWTUNNEL) \
+  include/uapi/linux/lwtunnel.h \
+  /home/zhf/Projects/srv6_test/srv6_kernel/headers/tools/tools.h \
+  include/net/seg6.h \
+  include/linux/seg6.h \
+  include/uapi/linux/seg6.h \
 
-/home/zhf/Projects/srv6_test/srv6_kernel/src/hooks/hook_ipv6_rcv.o: $(deps_/home/zhf/Projects/srv6_test/srv6_kernel/src/hooks/hook_ipv6_rcv.o)
+/home/zhf/Projects/srv6_test/srv6_kernel/src/api/check_srv6.o: $(deps_/home/zhf/Projects/srv6_test/srv6_kernel/src/api/check_srv6.o)
 
-$(deps_/home/zhf/Projects/srv6_test/srv6_kernel/src/hooks/hook_ipv6_rcv.o):
+$(deps_/home/zhf/Projects/srv6_test/srv6_kernel/src/api/check_srv6.o):
 
-/home/zhf/Projects/srv6_test/srv6_kernel/src/hooks/hook_ipv6_rcv.o: $(wildcard ./tools/objtool/objtool)
+/home/zhf/Projects/srv6_test/srv6_kernel/src/api/check_srv6.o: $(wildcard ./tools/objtool/objtool)

@@ -13,6 +13,8 @@ int self_defined_ipv6_rcv(struct sk_buff *skb,
 
 void add_ipv6_rcv_to_hook(void);
 
+bool resolve_ipv6_rcv_inner_functions_address(void);
+
 extern struct ftrace_hook hooks[MAXIMUM_SUPPORTED_HOOK_FUNCTIONS];
 extern int number_of_hook;
 

@@ -13,10 +13,11 @@ obj-m += srv6.o
 srv6-objs := \
 	src/api/ftrace_hook_api.o \
 	src/api/hook_functions_api.o \
-	src/hooks/hook_tcp_v4_rcv.o \
-	src/hooks/hook_ipv6_rcv.o \
-	src/impl/self_defined_tcp_v4_do_rcv.o \
-	src/impl/self_defined_tcp_rcv_established.o \
+	src/api/check_srv6.o \
+	src/hooks/ipv6_rcv/hook.o \
+	src/hooks/ipv6_rcv/impl.o \
+	src/hooks/ipv6_rcv_finish/impl.o \
+	src/hooks/ip6_rcv_finish_core/impl.o \
 	src/prepare/resolve_function_address.o \
 	src/tools/tools.o \
 	src/module_starter.o \
@@ -26,7 +27,8 @@ srv6-objs := \
 
 OUTPUT_DIR = "./build"
 
-ccflags-y += -I/home/zhf/Projects/srv6_kernel/headers
+# 这个必须要是 headers 的绝对路径才能行
+ccflags-y += -I/home/zhf/Projects/srv6_test/srv6_kernel/headers
 
 all: compile
 	echo "successful make"

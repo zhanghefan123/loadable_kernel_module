@@ -40,26 +40,23 @@ void LOG_WITH_EDGE(char* msg){
     LOG_WITH_PREFIX(final_output_msg);
 }
 
+
 /**
- * 进行路由表的打印
+ * 检查是否成功解析了函数的指针
+ * @param pointer 指针
+ * @param function_name 函数名称
+ * @return
  */
-void PRINT_RT(struct rtable* rt){
-    LOG_WITH_EDGE("info of rtable");
-    printk(KERN_EMERG "[zeusnet's kernel info]:rt->dst_entry.dev->name = %s\n", rt->dst.dev->name);
-    printk(KERN_EMERG "[zeusnet's kernel info]:rt->rt_genid = %d\n", rt->rt_genid);
-    printk(KERN_EMERG "[zeusnet's kernel info]:rt->rt_type = %d\n", rt->rt_type);
-    printk(KERN_EMERG "[zeusnet's kernel info]:rt->rt_is_input = %d\n", rt->rt_is_input);
-    printk(KERN_EMERG "[zeusnet's kernel info]:rt->rt_uses_gateway = %d\n", rt->rt_uses_gateway);
-    printk(KERN_EMERG "[zeusnet's kernel info]:rt->rt_iif = %d\n", rt->rt_iif);
-    printk(KERN_EMERG "[zeusnet's kernel info]:rt->rt_gw_family = %d\n", rt->rt_gw_family);
-    LOG_WITH_EDGE("info of rtable");
-}
-
-
-void LOG_RESOLVED(void* pointer, const char* function_name){
+bool TEST_RESOLVED(void* pointer, const char* function_name){
     if(pointer){
-        printk(KERN_EMERG "[zeusnet's kernel info]:%s resolved\n", function_name);
+        char result[50];
+        sprintf(result, "%s resolved", function_name);
+        LOG_WITH_PREFIX(result);
+        return true;
     } else {
-        LOG_WITH_PREFIX("error");
+        char result[50];
+        sprintf(result, "%s not resolved", function_name);
+        LOG_WITH_PREFIX(result);
+        return false;
     }
 }

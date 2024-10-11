@@ -1,1 +1,1 @@
-cmd_/home/zhf/Projects/srv6_kernel/Module.symvers := sed 's/ko$$/o/' /home/zhf/Projects/srv6_kernel/modules.order | scripts/mod/modpost -m -a  -o /home/zhf/Projects/srv6_kernel/Module.symvers -e -i Module.symvers   -T -
+cmd_/home/zhf/Projects/srv6_test/srv6_kernel/Module.symvers := sed 's/ko$$/o/' /home/zhf/Projects/srv6_test/srv6_kernel/modules.order | scripts/mod/modpost -m -a  -o /home/zhf/Projects/srv6_test/srv6_kernel/Module.symvers -e -i Module.symvers   -T -
