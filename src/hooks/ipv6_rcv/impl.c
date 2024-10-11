@@ -43,6 +43,7 @@ int self_defined_ipv6_rcv(struct sk_buff *skb,
     // 检测是否是 srv6 并且上层承载的是 TCP 数据包
     bool is_srv6_packet = check_if_srv6_and_tcp(skb);
 
+    // 获取开始时间
     start_time = ktime_get_real_ns();
 
     struct net *net = dev_net(skb->dev);
