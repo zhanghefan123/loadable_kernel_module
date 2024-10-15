@@ -28,7 +28,7 @@ srv6-objs := \
 OUTPUT_DIR = "./build"
 
 # 这个必须要是 headers 的绝对路径才能行
-ccflags-y += -I/home/zhf/Projects/srv6_test/srv6_kernel/headers
+ccflags-y += -I/home/zhf/Projects/srv6/srv6_kernel/headers
 
 all: compile
 	echo "successful make"

@@ -28,9 +28,9 @@ add_executable(srv6
         src/module_starter.c
 )
 
-set(HEADERS_DIR /usr/src/linux-headers-5.19.0-41-generic/include
-        /usr/src/linux-headers-5.19.0-41-generic/arch/x86/include
-        /usr/include
+set(HEADERS_DIR
+        /usr/src/linux-hwe-5.19-headers-5.19.0-41/include
+        /usr/src/linux-hwe-5.19-headers-5.19.0-41/arch/x86/include
         headers)
 
 # CLion IDE will find symbols from <linux/*>
