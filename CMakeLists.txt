@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.0.0 FATAL_ERROR)
 
-project("Linux Kernel Module with CLion IDE support / CMake" VERSION 0.1.0 LANGUAGES C)
+project("Loadable Kernel Module" VERSION 0.1.0 LANGUAGES C)
 set(CMAKE_C_STANDARD 90)
 set(CMAKE_C_STANDARD_REQUIRED ON)
 
@@ -15,7 +15,7 @@ add_definitions(-D__KERNEL__ -DMODULE)
 
 # this is needed in order for CLion IDE to provide syntax highlightning
 # this is independent from the actual kernel object that is built
-add_executable(srv6
+add_executable(lkm
         src/api/ftrace_hook_api.c
         src/api/hook_functions_api.c
         src/api/check_srv6.c
@@ -23,6 +23,10 @@ add_executable(srv6
         src/hooks/ipv6_rcv/impl.c
         src/hooks/ipv6_rcv_finish/impl.c
         src/hooks/ip6_rcv_finish_core/impl.c
+        src/hooks/tcp_v4_rcv/hook.c
+        src/hooks/tcp_v4_rcv/impl.c
+        src/hooks/tcp_v4_do_rcv/impl.c
+        src/hooks/tcp_rcv_established/impl.c
         src/prepare/resolve_function_address.c
         src/tools/tools.c
         src/module_starter.c
@@ -34,4 +38,4 @@ set(HEADERS_DIR
         headers)
 
 # CLion IDE will find symbols from <linux/*>
-target_include_directories("srv6" PRIVATE ${HEADERS_DIR})
+target_include_directories("lkm" PRIVATE ${HEADERS_DIR})

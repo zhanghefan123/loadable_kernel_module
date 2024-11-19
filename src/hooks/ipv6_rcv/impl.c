@@ -4,7 +4,7 @@
 #include "hooks/ipv6_rcv_finish/ipv6_rcv_finish.h"
 #include "api/check_srv6.h"
 
-char* ip6_rcv_core = "ip6_rcv_core";
+char* ip6_rcv_core_str = "ip6_rcv_core";
 
 asmlinkage struct sk_buff *(*original_ip6_rcv_core)(struct sk_buff *skb, struct net_device *dev, struct net *net);
 
@@ -13,13 +13,19 @@ asmlinkage struct sk_buff *(*original_ip6_rcv_core)(struct sk_buff *skb, struct 
  * @return
  */
 bool resolve_ipv6_rcv_inner_functions_address(void) {
-    bool resolve_result;
     LOG_WITH_EDGE("start to resolve ipv6_rcv inner functions address");
-    original_ip6_rcv_core = get_function_address(ip6_rcv_core);
-    resolve_result = TEST_RESOLVED(original_ip6_rcv_core, ip6_rcv_core);
-    if(!resolve_result){
-        return resolve_result;
-    }
+    // 结果
+    bool resolve_result;
+    // 所有的待初始化的函数指针构成的数组
+    void* functions[1];
+    // 所有的函数名
+    const char* function_names[1];
+    // 放置函数名
+    function_names[0] = ip6_rcv_core_str;
+    // 解析函数地址
+    resolve_result = resolve_functions_addresses(functions, function_names, 1);
+    // 将函数地址提取
+    original_ip6_rcv_core = functions[0];
     LOG_WITH_EDGE("end to resolve ipv6_rcv inner functions address");
     return resolve_result;
 }

@@ -4,6 +4,7 @@
 #include <linux/string.h>
 #include <linux/slab.h>
 #include "tools/tools.h"
+#include "api/ftrace_hook_api.h"
 
 
 /**
@@ -48,7 +49,7 @@ void LOG_WITH_EDGE(char* msg){
  * @return
  */
 bool TEST_RESOLVED(void* pointer, const char* function_name){
-    if(pointer){
+    if(pointer != NULL){
         char result[50];
         sprintf(result, "%s resolved", function_name);
         LOG_WITH_PREFIX(result);
@@ -59,4 +60,18 @@ bool TEST_RESOLVED(void* pointer, const char* function_name){
         LOG_WITH_PREFIX(result);
         return false;
     }
+}
+
+bool resolve_functions_addresses(void** pointers, const char** function_names, int length){
+    int index;
+    bool resolve_result;
+    for(index = 0; index < length; index ++){
+        pointers[index] = get_function_address(function_names[index]);
+        resolve_result = TEST_RESOLVED(pointers[index], function_names[index]);
+        if(!resolve_result){
+            printk(KERN_EMERG "cannot resolve function %s\n", function_names[index]);
+            return resolve_result;
+        }
+    }
+    return resolve_result;
 }

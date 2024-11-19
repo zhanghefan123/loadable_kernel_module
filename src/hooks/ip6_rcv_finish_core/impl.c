@@ -2,11 +2,12 @@
 #include "api/ftrace_hook_api.h"
 #include "hooks/ip6_rcv_finish_core/ip6_rcv_finish_core.h"
 
-char* tcp_v6_early_demux = "tcp_v6_early_demux";
+char* tcp_v6_early_demux_str = "tcp_v6_early_demux";
+char *udp_v6_early_demux_str = "udp_v6_early_demux";
+char *ip6_route_input_str = "ip6_route_input";
+
 asmlinkage void (*original_tcp_v6_early_demux)(struct sk_buff *skb);
-char *udp_v6_early_demux = "udp_v6_early_demux";
 asmlinkage void (*original_udp_v6_early_demux)(struct sk_buff *skb);
-char *ip6_route_input = "ip6_route_input";
 asmlinkage void (*original_ip6_route_input)(struct sk_buff *skb);
 
 static inline bool skb_valid_dst(const struct sk_buff *skb) {
@@ -15,27 +16,19 @@ static inline bool skb_valid_dst(const struct sk_buff *skb) {
 }
 
 bool resolve_ip6_rcv_finish_core_inner_functions_address(void){
-    bool resolve_result;
     LOG_WITH_EDGE("start to resolve ip6_rcv_finish_core inner functions address");
-
-    original_tcp_v6_early_demux = get_function_address(tcp_v6_early_demux);
-    resolve_result = TEST_RESOLVED(original_tcp_v6_early_demux, tcp_v6_early_demux);
-    if(!resolve_result){
-        return resolve_result;
-    }
-
-    original_udp_v6_early_demux = get_function_address(udp_v6_early_demux);
-    resolve_result = TEST_RESOLVED(original_udp_v6_early_demux, udp_v6_early_demux);
-    if(!resolve_result){
-        return resolve_result;
-    }
-
-    original_ip6_route_input = get_function_address(ip6_route_input);
-    resolve_result = TEST_RESOLVED(original_ip6_route_input, ip6_route_input);
-    if(!resolve_result){
-        return resolve_result;
-    }
-
+    // 解析结果
+    bool resolve_result;
+    // 所有的待初始化的函数指针构成的数组
+    void* functions[3];
+    const char* function_names[3];
+    function_names[0] = tcp_v6_early_demux_str;
+    function_names[1] = udp_v6_early_demux_str;
+    function_names[2] = ip6_route_input_str;
+    resolve_result = resolve_functions_addresses(functions, function_names, 3);
+    original_tcp_v6_early_demux = functions[0];
+    original_udp_v6_early_demux = functions[1];
+    original_ip6_route_input = functions[2];
     LOG_WITH_EDGE("end to resolve ip6_rcv_finish_core inner functions address");
     return resolve_result;
 }
